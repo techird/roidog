@@ -4,6 +4,14 @@
 @link-color: #3bbded;
 @link-hover-color: #288dc6;
 
+.transition(@value) {
+	-webkit-transition: @value;
+	   -moz-transition: @value;
+	    -ms-transition: @value;
+	     -o-transition: @value;
+	        transition: @value;
+}
+
 body, div, ul, li, p, h1, h2, h3, h4, h5 {
 	margin: 0;
 	padding: 0;
@@ -13,6 +21,7 @@ body, div, ul, li, p, h1, h2, h3, h4, h5 {
 a {
 	cursor: pointer;
 	color: @link-color;
+	text-decoration: none;
 	&:hover {
 		color: @link-hover-color;
 	}
@@ -398,7 +407,7 @@ div.panel-header {
 		background-color: #ffffff;
 		border-radius: 4px;
 		overflow: hidden;
-		box-shadow: 0 0 3px rgba(154, 158, 154, .36);
+		box-shadow: 0 0 3px rgba(154, 158, 154, .8);
 		.select-option {
 			height: 29px;
 			line-height: 29px;
@@ -554,6 +563,140 @@ div.fast-nav {
 			vertical-align: middle;
 			&:hover {
 				background-color: #585858;
+			}
+		}
+	}
+}
+
+
+
+form {
+	padding: 30px 0;
+	background-color: white;
+	.field {
+		padding: 3px 0;
+		font-size: 12px;
+		& > label {
+			display: inline-block;
+			width: 160px;
+			vertical-align: middle;
+			text-align: right;
+			height: 24px;
+			line-height: 24px;
+			font-size: 12px;
+			color: #53585d;
+			padding-right: 5px;
+		}
+		input[type="text"], input[type="search"] {
+			.transition(all .5s ease);
+			border: 1px solid #dcdad1;
+			border-radius: 2px;
+			outline: none;
+			height: 18px;
+			width: 230px;
+			box-sizing: content-box;
+			line-height: 18px;
+			padding: 2px 3px;
+			vertical-align: middle;
+			background-color: #fcfcfc;
+			&:focus {
+				border-color: #c3eaf8;
+				box-shadow: 0 0 3px rgba(59, 189, 237, .5);
+			}
+		}
+		input.switch {
+			-webkit-appearance: none;
+			vertical-align: middle;
+			display: inline-block;
+			outline: none;
+			width: 80px;
+			height: 24px;
+			background-color: #dfded8;
+			position: relative;
+			border-radius: 12px;
+			cursor: pointer;
+			.transition(all .8s ease);
+			&:after {
+				.transition(left .3s ease);
+				content: ' ';
+				display: block;
+				position: absolute;
+				background: url(../image/switch.png) 0 -20px;
+				height: 20px;
+				line-height: 20px;
+				text-align: center;
+				width: 35px;
+				left: 43px;
+				top: 2px;
+				border-radius: 10px;
+			}
+			&[checked] {
+				background-color: #59b1b9;
+				&:after {
+					content: ' ';
+					left: 2px;
+					background-position: 0 0;
+				}
+			}
+		}
+		.select-widget {				
+			background: #fcfcfc;		
+			border: 1px solid #dcdad1;
+			border-radius: 2px;
+			outline: none;
+			height: 18px;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			padding-right: 50px;
+			line-height: 18px;
+			vertical-align: middle;
+			cursor: pointer;
+
+			.select-value {
+				color: #919088;
+				text-shadow: none;
+				font-size: 12px;
+				display: block;
+				height: 18px;
+				line-height: 18px;
+			}
+			.select-caret {
+				width: 20px;
+				height: 20px;
+				right: 1px;
+				top: 1px;
+				background-position: 0 -50px;
+			}
+			.select-option-list {
+				z-index: 100;
+				top: 24px;
+				border-radius: 2px;
+				.select-option {
+					font-size: 12px;
+					height: 24px;
+					line-height: 24px;
+					padding-right: 50px;
+					&:hover {
+						background-color: #ececec;
+						color: #53585d;
+					}
+				}
+			}
+			&:hover, &.active {
+				.select-caret {
+					background-position: 0 -70px;
+				}
+			}
+		}
+		& > a {
+			display: inline-block;
+			height: 24px;
+			line-height: 24px;
+			margin-left: 10px;
+		}
+		&.top-align {
+			label {
+				vertical-align: top;
 			}
 		}
 	}

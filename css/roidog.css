@@ -1,5 +1,5 @@
 body,div,ul,li,p,h1,h2,h3,h4,h5{margin:0;padding:0;list-style:none}
-a{cursor:pointer;color:#3bbded}a:hover{color:#288dc6}
+a{cursor:pointer;color:#3bbded;text-decoration:none}a:hover{color:#288dc6}
 body{background:url(../image/background.png) repeat;font-family:Arial}
 div.tooltip{position:absolute;width:150px;background-color:#4b4e4f;color:#fff;font-size:12px;border-radius:5px;padding:5px 10px;box-shadow:0 3px 6px rgba(56,55,51,0.3)}div.tooltip div.knock{position:absolute;bottom:-7px;width:6px;height:7px;left:5px;background:url(../image/tooltip_knock.png)}
 .clear-fix{height:0;line-height:0;clear:both}
@@ -40,7 +40,7 @@ div.panel-header{background-color:#ebeae6;border-bottom:2px solid #59b1b9;height
 .select-widget{background:url(../image/select.png) right 0;border:1px solid #ccc;height:29px;line-height:29px;padding:0 20px 0 10px;font-size:14px;color:#333;text-shadow:0 1px #fff;border-radius:4px;font-weight:normal;font-family:Helvetica,Arial;position:relative;display:inline-block;cursor:pointer}.select-widget label{font-weight:normal;margin:0}
 .select-widget:hover{border-color:#a6a6a6}
 .select-widget .select-caret{position:absolute;width:12px;height:10px;right:7px;top:10px;background:url(../image/select.png) 0 -30px}
-.select-widget .select-option-list{position:absolute;left:0;top:30px;background-color:#fff;border-radius:4px;overflow:hidden;box-shadow:0 0 3px rgba(154,158,154,0.36)}.select-widget .select-option-list .select-option{height:29px;line-height:29px;font-size:14px;color:#53585d;text-shadow:none;padding:0 20px 0 10px}.select-widget .select-option-list .select-option:hover{color:#fff;background-color:#59b1b9}
+.select-widget .select-option-list{position:absolute;left:0;top:30px;background-color:#fff;border-radius:4px;overflow:hidden;box-shadow:0 0 3px rgba(154,158,154,0.8)}.select-widget .select-option-list .select-option{height:29px;line-height:29px;font-size:14px;color:#53585d;text-shadow:none;padding:0 20px 0 10px}.select-widget .select-option-list .select-option:hover{color:#fff;background-color:#59b1b9}
 .select-widget.active .select-caret,.select-widget:hover .select-caret{background-position:0 -40px}
 .select-widget.date-range label{padding-left:18px;background:url(../image/calendar.png) left -1px no-repeat}
 .radio-group{margin:0 3px;display:inline-block}
@@ -60,3 +60,13 @@ div.fast-nav{position:fixed;bottom:20px;right:20px}div.fast-nav ul{width:76px}
 div.fast-nav li{width:76px;height:44px;border-bottom:1px solid #646464}div.fast-nav li.last-link{border-bottom:1px solid #ddd}
 div.fast-nav li.go-top{display:none}div.fast-nav li.go-top a{background-image:url(../image/narrow-up.png);background-position:center center;background-repeat:no-repeat}
 div.fast-nav li a{display:table-cell;width:68px;height:36px;padding:4px;line-height:18px;text-align:center;font-size:12px;text-decoration:none;color:#eeede8;background-color:#757575;vertical-align:middle}div.fast-nav li a:hover{background-color:#585858}
+form{padding:30px 0;background-color:#fff}form .field{padding:3px 0;font-size:12px}form .field>label{display:inline-block;width:160px;vertical-align:middle;text-align:right;height:24px;line-height:24px;font-size:12px;color:#53585d;padding-right:5px}
+form .field input[type="text"],form .field input[type="search"]{-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;border:1px solid #dcdad1;border-radius:2px;outline:none;height:18px;width:230px;box-sizing:content-box;line-height:18px;padding:2px 3px;vertical-align:middle;background-color:#fcfcfc}form .field input[type="text"]:focus,form .field input[type="search"]:focus{border-color:#c3eaf8;box-shadow:0 0 3px rgba(59,189,237,0.5)}
+form .field input.switch{-webkit-appearance:none;vertical-align:middle;display:inline-block;outline:none;width:80px;height:24px;background-color:#dfded8;position:relative;border-radius:12px;cursor:pointer;-webkit-transition:all .8s ease;-moz-transition:all .8s ease;-ms-transition:all .8s ease;-o-transition:all .8s ease;transition:all .8s ease}form .field input.switch:after{-webkit-transition:left .3s ease;-moz-transition:left .3s ease;-ms-transition:left .3s ease;-o-transition:left .3s ease;transition:left .3s ease;content:' ';display:block;position:absolute;background:url(../image/switch.png) 0 -20px;height:20px;line-height:20px;text-align:center;width:35px;left:43px;top:2px;border-radius:10px}
+form .field input.switch[checked]{background-color:#59b1b9}form .field input.switch[checked]:after{content:' ';left:2px;background-position:0 0}
+form .field .select-widget{background:#fcfcfc;border:1px solid #dcdad1;border-radius:2px;outline:none;height:18px;padding-top:2px;padding-bottom:2px;padding-right:50px;line-height:18px;vertical-align:middle;cursor:pointer}form .field .select-widget .select-value{color:#919088;text-shadow:none;font-size:12px;display:block;height:18px;line-height:18px}
+form .field .select-widget .select-caret{width:20px;height:20px;right:1px;top:1px;background-position:0 -50px}
+form .field .select-widget .select-option-list{z-index:100;top:24px;border-radius:2px}form .field .select-widget .select-option-list .select-option{font-size:12px;height:24px;line-height:24px;padding-right:50px}form .field .select-widget .select-option-list .select-option:hover{background-color:#ececec;color:#53585d}
+form .field .select-widget:hover .select-caret,form .field .select-widget.active .select-caret{background-position:0 -70px}
+form .field>a{display:inline-block;height:24px;line-height:24px;margin-left:10px}
+form .field.top-align label{vertical-align:top}

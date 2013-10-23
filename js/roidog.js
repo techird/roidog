@@ -1,4 +1,6 @@
 $(function () {
+
+/* Tab Widget */
 	$('.tab-container').delegate('ul.tab li', 'click', function(e) {
 		var li, index, container;
 		li = $(e.target);
@@ -12,11 +14,7 @@ $(function () {
 			.eq(index).addClass("active");
 	});
 
-	$("#alert-list").delegate("a.close", 'click', function(e) {
-		var li = $(e.target).closest("li");
-		li.slideUp("fast");
-	});
-
+/* Header Menu */
 	$("div.header").delegate("a.drop-down", 'mousedown', function(e) {
 		var a = $(e.target);
 		var li = a.closest("li");
@@ -36,13 +34,14 @@ $(function () {
 		offset.left -= ul.width() / 2 - a.width() / 2;
 		ul.offset(offset);
 		e.stopPropagation();
+
+		$("body").one("mousedown", function(e) {
+			$("ul.drop-down-menu").fadeOut("fast");
+			$("div.header li.active").removeClass("active");
+		});
 	});
 
-	$("body").on("mousedown", function(e) {
-		$("ul.drop-down-menu").fadeOut("fast");
-		$("div.header li.active").removeClass("active");
-	});
-
+/* Tooltip */
 	$("*[tooltip-text]").on("mouseover", function(e) {
 		var $target = $(e.target);
 		if(!$target.attr("tooltip-text")) return;
@@ -75,6 +74,7 @@ $(function () {
 		})
 	});
 
+/* Select Widget */
 	function resolveStyleDeclare( declare ) {
 		var pattern = /(\w+)\s*\:\s*([\w\-]+)/g, match;
 		var resolved = {};
@@ -102,13 +102,16 @@ $(function () {
 		var text = $select.attr("placeholder");
 		$select.children("option").each(function() {
 			$option = $(this);
-			var text = $option.html();
-			var $li = $('<li class="select-option"></li>').html(markdown(text)).appendTo($popup);
-			if($option.prop("selected")) text = $option.text();
+			var $li = $('<li class="select-option"></li>').html(markdown($option.html())).appendTo($popup);
+			if($option.attr("selected")) text = $option.text();
 		});
-		$div.css("width", $select.width());
-		$popup.children().css("width", $div.width());
 		$label.html(markdown(text || $select.children("option").first().text()));
+
+		var width = Math.max($label.width(), $select.width())
+
+		$div.css("width", width);
+		$popup.children().css("width", width);
+
 		$popup.css("display", 'none');
 
 		$div.click(function(e) {
@@ -132,13 +135,12 @@ $(function () {
 		$div.delegate(".select-option", "click", function() {
 			var index = $(this).prevAll().length;
 			var text = $select.children("option").removeAttr("selected").eq(index).attr("selected", "selected").text();
-			$label.html(markdown(text));
+			$label.html(markdown(text)).addClass("valued");
 		});
 		
 	}).css("display", "none");
 
-
-
+/* Group Button */
 	$('label.check-widget').on('click', function(e) {
 		var $target = $(e.target);
 		if($target[0].tagName.toLowerCase() != 'label') return;
@@ -156,38 +158,7 @@ $(function () {
 		}
 	});
 
-	$('div.date-range').daterangepicker(
-	    {
-	      ranges: {
-	         'Today': [moment(), moment()],
-	         'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-	         'Last 7 Days': [moment().subtract('days', 6), moment()],
-	         'Last 30 Days': [moment().subtract('days', 29), moment()],
-	         'This Month': [moment().startOf('month'), moment().endOf('month')],
-	         'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
-	      },
-	      startDate: moment().subtract('days', 29),
-	      endDate: moment()
-	    },
-	    function(start, end) {
-	        $('div.date-range label').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
-	    }
-	);
-
-	$('.landing-page').delegate('a.fold', 'click', function(e) {
-		var $tr = $(e.target).closest("tr");
-		$tr.addClass("expanded");
-		if($tr.next().hasClass('landing-page-detail')) {
-			$tr.next().removeClass("hidden");
-		}
-	}).delegate('a.unfold', 'click', function(e) {
-		var $tr = $(e.target).closest("tr");
-		$tr.removeClass("expanded");
-		if($tr.next().hasClass('landing-page-detail')) {
-			$tr.next().addClass("hidden");
-		}
-	});
-
+/* Fast Navigation */
 	function onscroll() {
 		var top = document.body.scrollTop;
 		if(top > 0) {
@@ -204,6 +175,11 @@ $(function () {
 	onresize();
 	$(window).scroll(onscroll);
 	$(window).resize(onresize);
+
+/* Switcher */
+	$(".switch").click(function(e) {
+		$(e.target).attr('checked') ? $(e.target).removeAttr("checked") : $(e.target).attr("checked", "checked");
+	});
 });
 
 
