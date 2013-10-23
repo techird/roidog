@@ -1,0 +1,540 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"too",
+				"tooltipOffset"
+			],
+			[
+				"ta",
+				"target"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"backgroudn",
+				"background-color"
+			],
+			[
+				"top",
+				"tooltipOffset"
+			],
+			[
+				"res",
+				"resolveStyleDeclare"
+			],
+			[
+				"link",
+				"link-color"
+			],
+			[
+				"link-",
+				"link-hover-color"
+			],
+			[
+				"backg",
+				"background"
+			],
+			[
+				"split",
+				"spliter-down"
+			],
+			[
+				"border-bott",
+				"border-bottom-color"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"drop-",
+				"drop-down-menu"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"por",
+				"prototype"
+			],
+			[
+				"sp",
+				"splited"
+			],
+			[
+				"spli",
+				"splitFullClassName"
+			],
+			[
+				"name",
+				"namespace"
+			],
+			[
+				"pat",
+				"parts"
+			],
+			[
+				"fu",
+				"fullClassName"
+			],
+			[
+				"get",
+				"getNamespace"
+			],
+			[
+				"spl",
+				"splitPos"
+			],
+			[
+				"instance",
+				"instanceof"
+			],
+			[
+				"tob",
+				"toBeTruthy"
+			],
+			[
+				"instan",
+				"instanceof"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"drow",
+				"drop-down-menu"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"dro",
+				"drop-down-menu"
+			],
+			[
+				"mouse",
+				"mouseover"
+			],
+			[
+				"drp",
+				"drop-down-menu"
+			],
+			[
+				"dr",
+				"drop-down-menu"
+			],
+			[
+				"d",
+				"drop-down"
+			],
+			[
+				"close",
+				"closest"
+			],
+			[
+				"tab",
+				"tab-container"
+			],
+			[
+				"sat",
+				"static"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"node",
+				"nodeName"
+			],
+			[
+				"pa",
+				"paths"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"store",
+				"storeItem"
+			],
+			[
+				"de",
+				"defaults"
+			],
+			[
+				"客户",
+				"客户回访提示"
+			],
+			[
+				"Poly",
+				"Polyline"
+			],
+			[
+				"po",
+				"polygon"
+			],
+			[
+				"fn",
+				"function"
+			],
+			[
+				"fun",
+				"function"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 10052,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/roidog.js",
+			"settings":
+			{
+				"buffer_size": 2302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/roidog.less",
+			"settings":
+			{
+				"buffer_size": 10267,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"spa",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"spac",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 437.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/techird/prj/kity/spec/core/kity.js",
+		"/Users/techird/prj/kity/src/core/kity.js",
+		"/Users/techird/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/techird/prj/roidog/index.html",
+		"/Users/techird/prj/roidog/css/roidog.less",
+		"/Users/techird/prj/kity/src/graphic/path.js",
+		"/Users/techird/prj/kity/src/graphic/shape.js",
+		"/Users/techird/prj/ext-crm-desktop/js/crm/ClientDetailWindow.js",
+		"/Users/techird/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/techird/prj/kity/_test/graphic/Text.js",
+		"/Users/techird/prj/kity/_test/graphic/Polygon.js",
+		"/Users/techird/prj/kity/_test/graphic/Curve.js",
+		"/Users/techird/prj/kity/_test/graphic/Ployline.js",
+		"/Users/techird/prj/kity/_test/graphic/Ellipse.js",
+		"/Users/techird/prj/kity/_test/graphic/Rect.js",
+		"/Users/techird/prj/kity/_test/graphic/Group.js",
+		"/Users/techird/prj/kity/_test/graphic/Path.js"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"tooltip-position",
+			"le'r't",
+			"news",
+			"info",
+			"707377",
+			"3bbded",
+			"历史发送品类：煤、金属矿石、钢块、矿建、粮食、饮食烟草",
+			"preview",
+			"minimap",
+			"map",
+			"wrap",
+			"ending",
+			"chara"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tooltip-offset"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3046,
+								3046
+							],
+							[
+								3249,
+								3249
+							],
+							[
+								3461,
+								3461
+							],
+							[
+								3707,
+								3707
+							],
+							[
+								3922,
+								3922
+							],
+							[
+								4139,
+								4139
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1649.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/roidog.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1461,
+								1461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 738.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/roidog.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2636,
+								2636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2452.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "roidog.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"core",
+				"src/core/kity.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 183.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,18 @@
+div.performance-container{padding:10px;overflow:hidden}
+div.filter{overflow:visible;height:31px;padding-top:20px;padding-bottom:10px}div.filter .filter-left{float:left;margin-right:10px}
+div.filter .filter-right{float:right;margin-left:10px}
+div.trend{width:650px;float:left}div.trend .panel-content{padding:10px;height:265px;background:#fff}
+div.trend .trend-filter{height:22px}div.trend .trend-filter .cr-option,div.trend .trend-filter .roi-option,div.trend .trend-filter .data-type-select{float:right}
+div.overall{float:left;width:328px;margin-right:0}div.overall table{border-collapse:collapse;width:100%}div.overall table tr td{padding:5px 10px;background-color:#fff;color:#464948;font-size:12px}
+div.overall table tr.odd td{background-color:#f9f9f9}
+div.landing-page{margin-right:0;width:100%}div.landing-page td.indent{border:none;background-color:transparent}
+div.landing-page td.content{padding:0;background-color:transparent;padding-bottom:5px;border:none}div.landing-page td.content table.output-link th{border-top:1px solid #59b1b9}
+div.landing-page td a.fold{display:inline-block;font-size:12px;padding-right:16px;background:url(../image/fold.png) right 3px no-repeat}
+div.landing-page td a.unfold{display:none;font-size:12px;padding-right:16px;background:url(../image/fold.png) right -27px no-repeat;color:#fff}
+div.landing-page tr.expanded td{border-bottom:none}div.landing-page tr.expanded td a.fold{display:none}
+div.landing-page tr.expanded td a.unfold{display:inline-block}
+div.landing-page tr.expanded td.fold-action{background-color:#59b1b9}
+div.landing-page tr.landing-page-detail.hidden{display:none}
+div.compaign-url{width:100%}
+div.conversion-time,div.geo{width:100%;border:1px solid #eeede8;border-top:none;background-color:#fff}div.conversion-time div.chart,div.geo div.chart{width:325px;height:320px;padding:10px 0;float:left;margin-right:-1px;border-right:1px solid #f6f5f1;padding-left:1px}div.conversion-time div.chart:last-child,div.geo div.chart:last-child{border:none}
+div.conversion-time div.chart h3,div.geo div.chart h3{height:22px;line-height:22px;text-align:center;margin:10px 0;font-size:14px;font-weight:normal}
