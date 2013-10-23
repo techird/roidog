@@ -1,0 +1,80 @@
+.transition(@value) {
+	-webkit-transition: @value;
+	   -moz-transition: @value;
+	    -ms-transition: @value;
+	     -o-transition: @value;
+	        transition: @value;
+}
+
+div.create-form-container {
+	min-height: 100px;
+	background-color: #f7f7f7;
+
+	h1 {
+		font-size: 18px;
+		height: 18px;
+		line-height: 18px;
+		padding: 25px 0 15px 20px;
+	}
+
+	.campaign-basic-info > .field > div.offers {
+		display: inline-block;
+		vertical-align: top;
+		border: 1px solid #dcdad1;
+		border-radius: 2px;
+		width: 510px;
+		.selected {
+			padding: 5px 10px 0;
+			border-bottom: 1px solid #dcdad1;
+			li {
+				display: inline-block;
+				background-color: #3bbded;
+				font-size: 12px;
+				color: white;
+				height: 20px;
+				line-height: 20px;
+				padding: 0 25px 0 5px;
+				border-radius: 2px;
+				position: relative;
+				margin: 0 5px 5px 0;
+				.close {
+					position: absolute;
+					display: block;
+					width: 20px;
+					height: 20px;
+					top: 0;
+					right: 1px;
+					background: url(../image/close-button.png) 0 -40px;
+					&:hover {
+						background-position: 0 -60px;
+					}
+				}
+			}
+			&.empty {
+				display: none;
+			}
+		}
+		.search {
+			position: relative;
+			& > .search-box {		
+				display: block;
+				position: absolute;
+				height: 24px;
+				padding: 10px;
+				width: 450px;
+				background-color: white;		
+				& > input[type="search"] {
+					width: 300px;
+				}
+			}
+			& > ul {
+				overflow-y: auto;
+				max-height: 150px;
+				padding: 35px 10px 10px;
+				li:first-child {
+					margin-top: 7px;
+				}
+			}
+		}
+	}
+}
