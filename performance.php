@@ -113,6 +113,7 @@
 				</table>
 			</div>
 		</div>
+		<div class="clear-fix"></div>
 		<div class="panel landing-page">
 			<a name="landing-page"></a>
 			<div class="panel-header"><h2>Landing Pages</h2></div>
@@ -352,6 +353,7 @@
 				</table>
 			</div>
 		</div>
+		<div class="clear-fix"></div>
 		<div class="panel compaign-url">
 			<a name="campaign-uri"></a>
 			<div class="panel-header"><h2>Compaign URLs</h2></div>
@@ -393,6 +395,7 @@
 				</table>
 			</div>
 		</div>
+		<div class="clear-fix"></div>
 		<div class="panel conversion-time tab-container">
 			<div class="panel-header">
 				<a name="conversion-time"></a>
@@ -443,6 +446,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="clear-fix"></div>
 		<div class="panel conversion-time tab-container">
 			<a name="geo"></a>
 			<div class="panel-header">

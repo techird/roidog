@@ -54,7 +54,7 @@ $(function () {
 			if($chk.prop("checked")) {
 				$("<li></li>").html($chk.parent().text())
 					.attr("data-id", $chk.attr("data-id"))
-					.append('<a class="close"></a>')
+					.append('<a class="close round-small"></a>')
 					.appendTo($selected);
 			} else {
 				removeSelected($chk.attr("data-id"));
@@ -67,4 +67,37 @@ $(function () {
 			checkEmpty();
 		});
 	});
+
+	$('.panel.landing-page')
+		.delegate('.new-output select.split-button option', 'selected', function(e) {
+			var $con = $(e.target).closest('.new-output');
+			var $ul = $con.find('.rotations > ul');
+			var $li = $.def($(e.target).val()).css("display", "none");
+			$ul.closest('.field').removeClass('empty');
+			$ul.append($li);
+			$li.slideDown("fast");
+		})
+		.delegate('.rotations li.closable', 'close' , function(e){
+			var $li = $(e.target);
+			var isSingle = $li.siblings().length == 0;
+			if(isSingle) {
+				$li.closest('.field').addClass('empty');
+			}
+		})
+		.delegate('.new-output-btn', 'click', function(e) {
+			$(e.target).before($.def('.new-output'));
+		});
+
+	$('.panel.campaign-url')
+		.delegate('.param-container button', 'click', function(e) {
+			var li = $.def(".campaign-param").css("display", "none");
+			$(e.target).prev().append(li);
+			li.slideDown("fast");
+		})
+		.delegate('.traffic-container select.split-button option', 'selected', function(e) {
+			var $ul = $(e.target).parent().prev();
+			var $li = $.def($(e.target).val()).css("display", "none");
+			$ul.append($li);
+			$li.slideDown("fast");
+		})
 })

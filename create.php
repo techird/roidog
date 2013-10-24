@@ -56,6 +56,184 @@
 				<a href="">New Offer</a>
 			</div>
 		</form>
+		<div class="panel landing-page tab-container">
+			<div class="panel-header">
+				<h2>Landing page</h2>
+			</div>
+			<ul class="tab block growth">
+				<li class="active">Landing page</li>
+			</ul>
+			<div class="panel-content tab-body active">
+				<form>
+					<div class="field">
+						<label>Landing Page Name</label>
+						<input type="text" />
+					</div>
+					<div class="field">
+						<label>Landing Page URL</label>
+						<input type="text" />
+					</div>	
+				</form>					
+				<div class="def new-output closable">
+					<a class="close square"></a>
+					<form>
+						<div class="field">
+							<label>output name</label>
+							<input type="text" >
+						</div>
+						<div class="field top-align empty">
+							<label></label>
+							<div class="rotations">
+								<ul>
+									<li class="def new-offer-rotation sub-item closable">
+										<label>Rotation to offer</label>
+										<select placeholder="select a group">
+											<option>Group1</option>
+											<option>Group2</option>
+										</select>
+										<span>share</span>
+										<input type="text" class="short" />
+										<span>%</span>
+										<a class="close round"></a>
+									</li>
+									<li class="def new-landing-rotation sub-item closable">
+										<label>Rotation to Landing page</label>
+										<select placeholder="select a group">
+											<option value="offer">group1</option>
+											<option value="offer">group2</option>
+										</select>
+										<span>share</span>
+										<input type="text" class="short" />
+										<span>%</span>
+										<a class="close round"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="field">
+							<label></label>
+							<select class="split-button" placeholder="New rotation to">
+								<option value=".new-offer-rotation">offer</option>
+								<option value=".new-landing-rotation">landing page</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<button class="new-output-btn form-button" type="button">New output link</button>
+			</div>
+		</div>
+		<div class="panel campaign-url tab-container">
+			<div class="panel-header">
+				<h2>Compaign URL</h2>
+			</div>
+			<ul class="tab block growth">
+				<li class="active">Compaign URL</li>
+			</ul>
+			<div class="panel-content tab-body active">
+				<form>
+					<div class="field">
+						<label>Campaign URL name</label>
+						<input type="text" />
+					</div>
+					<div class="field">
+						<label>Traffic Souce</label>
+						<select placeholder="select a group">
+							<option value="group">Group1</option>
+						</select>
+						<a>New Group</a>
+					</div>
+					<div class="field">
+						<label>CPC($)</label>
+						<input type="text" />
+					</div>
+					<div class="field">
+						<label>Keyword Token</label>
+						<input type="text" />
+						<label>Keyword Value</label>
+						<input type="text" />
+					</div>
+					<div class="field">
+						<label></label>
+						<div class="param-container">
+							<ul>
+								<li class="def campaign-param sub-item gray closable">
+									<label>Parameter Name</label>
+									<input type="text" />
+									<span>Value</span>
+									<input type="text" />
+									<a class="close round"></a>
+								</li>
+							</ul>
+							<button class="form-button" type="button">New parameter</button>
+						</div>
+					</div>
+					<div class="padding-box"></div>
+					<div class="field top-align">
+						<label style="line-height: 40px;">Assign Traffic Source</label>
+						<div class="traffic-container">
+							<ul>
+								<li class="def assign-traffic-to-landing-page gray sub-item closable">
+									<label>To landing page</label>
+									<select placeholder="select a group">
+										<option value="">Group1</option>
+									</select>
+									<span>share</span>
+									<input type="text" class="short" />
+									<span>%</span>
+									<a class="close round"></a>
+								</li>
+								<li class="def assign-traffic-to-offer sub-item gray closable">
+									<label>To offer</label>
+									<select placeholder="select a group">
+										<option value="">Group1</option>
+									</select>
+									<span>share</span>
+									<input type="text" class="short" />
+									<span>%</span>
+									<a class="close round"></a>
+								</li>
+							</ul>
+							<select class="split-button" placeholder="Split Traffic To">
+								<option value=".assign-traffic-to-landing-page">Landing Page</option>
+								<option value=".assign-traffic-to-offer">Offer</option>
+							</select>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="panel advanced collapasible">
+			<div class="panel-header">
+				<h2>Advanced</h2>
+			</div>
+			<div class="panel-content">
+				<h3>Redirect</h2>
+				<form>
+					<div class="field">
+						<label></label>
+						<div class="condition">
+							<ul>
+								<li class="sub-item">
+									<label class="short">
+										<span class="if">IF</span>
+									</label>
+									<select class="short" placeholder="param...">
+										<option value="">Param1</option>
+									</select>
+									<select class="short" placeholder="compare">
+										<option value="">=</option>
+									</select>
+								</li>
+								<li class="sub-item gray closable">
+									<label for=""></label>
+								</li>
+							</ul>
+						</div>
+						<span class="IF"></span>
+					</div>
+				</form>
+			</div>
+		</div>
 	</div>
 
 	<?php include 'content_end.php' ?>

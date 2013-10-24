@@ -1,10 +1,18 @@
 $(function () {
 
+/* Closable */
+	$('body').delegate('a.close', 'click', function(e) {
+		var $closable = $(e.target).closest('.closable').slideUp("fast", function(e) {
+			$closable.trigger('close');
+			$closable.remove();
+		});
+	});
+
 /* Tab Widget */
 	$('.tab-container').delegate('ul.tab li', 'click', function(e) {
 		var li, index, container;
 		li = $(e.target);
-		if(li.hasClass('active')) return;
+		if(li.hasClass('active') || li.hasClass('growth-button')) return;
 
 		li.addClass("active")
 		  .siblings().removeClass("active");
@@ -12,6 +20,24 @@ $(function () {
 		container = li.closest(".tab-container");
 		container.find(".tab-body").removeClass("active")
 			.eq(index).addClass("active");
+	});
+
+	$('.tab-container ul.tab.growth').each(function(index, ul) {
+		var $ul = $(ul);
+		var $li = $ul.children();
+		var $button = $('<li class="growth-button" title="add a tab"></li>').appendTo($ul);
+		var title = $li.text();
+		var id = 1;
+		var template;
+		setTimeout(function() {
+			template = $ul.closest(".tab-container").find('.tab-body').clone();
+		});
+		$button.click( function() {
+			$newLi = $("<li></li>").html(title + id++);
+			$button.before($newLi);
+			$ul.closest(".tab-container").find('.tab-body:last-child').after(template.clone());
+			$newLi.click();
+		} );
 	});
 
 /* Header Menu */
@@ -113,32 +139,41 @@ $(function () {
 		$popup.children().css("width", width);
 
 		$popup.css("display", 'none');
-
-		$div.click(function(e) {
-			if ($div.hasClass("active")) {
-				$div.removeClass("active");
-				$popup.fadeOut("fast");
-			} else {
-				$(".select-widget.active").removeClass("active")
-					.find(".select-option-list").css("display", "none");
-				$div.addClass("active");
-				$popup.css("display", "block");
-			}
-			e.stopPropagation();
-		});
-
-		$('body').click(function() {
-			$div.removeClass("active");
-			$popup.fadeOut("fast");
-		});
-
-		$div.delegate(".select-option", "click", function() {
-			var index = $(this).prevAll().length;
-			var text = $select.children("option").removeAttr("selected").eq(index).attr("selected", "selected").text();
-			$label.html(markdown(text)).addClass("valued");
-		});
 		
 	}).css("display", "none");
+
+	$('body').delegate('.select-widget', 'click', function(e) {
+		var $div = $(e.target).closest('.select-widget');
+		$popup = $div.find('.select-option-list');
+		if ($div.hasClass("active")) {
+			$div.removeClass("active");
+			$popup.fadeOut("fast");
+		} else {
+			$(".select-widget.active").removeClass("active")
+				.find(".select-option-list").css("display", "none");
+			$div.addClass("active");
+			$popup.css("display", "block");
+		}
+		e.stopPropagation();
+	})
+
+	.delegate(".select-option", "click", function() {
+		var index = $(this).prevAll().length;
+		var $div = $(this).closest('.select-widget');
+		var $select = $div.prev();
+		var $label = $div.children('label');
+		var $option = $select.children("option").removeAttr("selected").eq(index).attr("selected", "selected");
+		if(!$select.hasClass('split-button')){
+			$label.html(markdown($option.text())).addClass("valued")
+		} else {
+			$option.trigger('selected');
+		}
+	})
+
+	.on('click', function() {
+		$('.select-widget').removeClass('active')
+			.find(".select-option-list").fadeOut('fast');
+	});
 
 /* Group Button */
 	$('label.check-widget').on('click', function(e) {
@@ -180,6 +215,13 @@ $(function () {
 	$(".switch").click(function(e) {
 		$(e.target).attr('checked') ? $(e.target).removeAttr("checked") : $(e.target).attr("checked", "checked");
 	});
+
+/* Def support */
+	var defContainer = $("<div></div>");
+	$(".def").appendTo(defContainer);
+	$.def = function( selector ) {
+		return defContainer.children(selector).clone().removeClass('def');
+	}
 });
 
 

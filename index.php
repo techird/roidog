@@ -33,7 +33,7 @@
 		</div>
 	</div>
 	<div class="content">
-		<div class="panel index-data tab-container">
+		<div class="panel index-data tab-container half-size">
 			<div class="panel-header">					
 				<ul class="tab">
 					<li class="active">Today</li>
@@ -105,62 +105,62 @@
 				</table>
 			</div>
 		</div>
-		<div class="panel alert">
+		<div class="panel alert half-size">
 			<div class="panel-header"><h2>Alerts</h2></div>
 			<div class="panel-content">
 				<ul id="alert-list">
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification!
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
 					</li>
-					<li>
+					<li class="closable">
 						Check this out! This is a notification
 						<span class="date">08-25</span>
 						<a class="close"></a>
@@ -168,7 +168,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="panel top5-compaigns">
+		<div class="panel top5-compaigns half-size">
 			<div class="panel-header">
 				<h2>Top <em>5</em> Profit Campaigns</h2>
 			</div>
@@ -188,7 +188,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel top5-compaigns">
+		<div class="panel top5-compaigns half-size">
 			<div class="panel-header">
 				<h2>Top <em>5</em> Losed Campaigns</h2>
 			</div>
@@ -208,7 +208,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel top5-compaigns">
+		<div class="panel top5-compaigns half-size">
 			<div class="panel-header">
 				<h2>Top <em>5</em> Profit Keywords</h2>
 			</div>
@@ -228,7 +228,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="panel top5-compaigns">
+		<div class="panel top5-compaigns half-size">
 			<div class="panel-header">
 				<h2>Top <em>5</em> Losed Keywords</h2>
 			</div>
@@ -248,6 +248,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="clear-fix"></div>
 		<div class="panel info">
 			<div class="panel-header">
 				<h2>Information</h2>

@@ -6,8 +6,8 @@ div.index-data div.panel-content table td span.number sup{font-size:14px;line-he
 div.index-data div.panel-content table td span.number sub{font-size:24px;line-height:52px;left:1px;position:absolute;color:#747577}
 div.index-data div.panel-content table td span.field{display:block;text-align:center;font-size:12px;color:#747577}
 div.alert div.panel-content{height:200px;padding:0;overflow-y:auto}div.alert div.panel-content ul li{padding:12px 80px 12px 12px;position:relative;background-color:#fafaf9;border-top:1px solid #fefefd;border-bottom:1px solid #f7f8f7;color:#53585d;font-size:12px}div.alert div.panel-content ul li span.date{position:absolute;right:40px;height:16px;line-height:16px;margin-top:-8px;top:50%;display:block}
-div.alert div.panel-content ul li a.close{display:none;position:absolute;background:url("../image/close-button.png") no-repeat;width:20px;height:20px;right:10px;top:50%;margin-top:-10px}
-div.alert div.panel-content ul li:hover a.close{display:block}div.alert div.panel-content ul li:hover a.close:hover{cursor:pointer;background-position:0 -20px}
+div.alert div.panel-content ul li a.close{display:none}
+div.alert div.panel-content ul li:hover a.close{display:block}
 div.chart{background-color:#fdfdfd;text-align:center}div.chart img{height:200px}
 div.legend{background-color:#fafaf9;text-align:center}div.legend ul{display:inline-block;width:auto;padding:20px 0}div.legend ul li{background:url(../image/legend.png) no-repeat;padding-left:16px;height:15px;width:120px;text-align:left;display:inline-block}div.legend ul li.lt-1{background-position:0 0}
 div.legend ul li.lt-2{background-position:0 -15px}

@@ -1,3 +1,4 @@
+	<div class="clear-fix"></div>
 </div>
 
 <div class="footer">

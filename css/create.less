@@ -23,6 +23,7 @@ div.create-form-container {
 		border: 1px solid #dcdad1;
 		border-radius: 2px;
 		width: 510px;
+		line-height: 24px;
 		.selected {
 			padding: 5px 10px 0;
 			border-bottom: 1px solid #dcdad1;
@@ -31,24 +32,11 @@ div.create-form-container {
 				background-color: #3bbded;
 				font-size: 12px;
 				color: white;
-				height: 20px;
 				line-height: 20px;
 				padding: 0 25px 0 5px;
 				border-radius: 2px;
 				position: relative;
 				margin: 0 5px 5px 0;
-				.close {
-					position: absolute;
-					display: block;
-					width: 20px;
-					height: 20px;
-					top: 0;
-					right: 1px;
-					background: url(../image/close-button.png) 0 -40px;
-					&:hover {
-						background-position: 0 -60px;
-					}
-				}
 			}
 			&.empty {
 				display: none;
@@ -74,6 +62,52 @@ div.create-form-container {
 				li:first-child {
 					margin-top: 7px;
 				}
+				li {
+					line-height: 20px;
+				}
+			}
+		}
+	}
+
+	.landing-page .panel-content {
+		background-color: white;
+		padding-bottom: 30px;
+
+		.new-output-btn {
+			margin-left: 38px;
+		}
+		div.new-output {
+			width: 763px;
+			padding: 10px 0;
+			background-color: #f2f5f6;
+			margin-left: 38px;
+			margin-bottom: 5px;
+			position: relative;
+			form {
+				background: none;
+				padding: 0;
+				.field > label {
+					width: 122px;
+				}
+				div.rotations {
+					display: inline-block;
+					width: 520px;
+				}	
+			}
+		}
+	}
+
+	.campaign-url .panel-content {
+		div.param-container {
+			display: inline-block;
+			ul {
+				width: 640px;
+			}
+		}
+		div.traffic-container {
+			display: inline-block;
+			& > ul {
+				width: 510px;
 			}
 		}
 	}
