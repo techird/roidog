@@ -16,6 +16,7 @@ body, div, ul, li, p, h1, h2, h3, h4, h5 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	color: @text-color;
 }
 
 a {
@@ -311,6 +312,21 @@ div.panel {
 		width: 390px;
 		margin-right: 2px;
 		margin-top: 10px;
+	}
+	&.collapsible {
+		.panel-header h2 {
+			cursor: pointer;
+			padding-right: 30px;
+			background: url(../image/fold2.png) right -34px no-repeat;
+		}
+		&.collapsed {
+			.panel-header h2 {
+				background-position: right 0;
+			}
+			.panel-content {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -781,7 +797,6 @@ form {
 				vertical-align: top;
 			}
 		}
-
 		li.sub-item {			
 			height: 40px;
 			line-height: 40px;
@@ -799,6 +814,9 @@ form {
 				width: 145px;
 				padding-left: 10px;
 				display: inline-block;
+				&.short {
+					width: 53px;
+				}
 			}
 			input {
 				width: 140px;
@@ -811,8 +829,13 @@ form {
 			}
 			select {
 				width: 140px;
+				&.short {
+					width: 14px;
+					margin-right: 15px;
+				}
 			}
 		}
+
 	}
 	
 	.padding-box {
@@ -821,7 +844,7 @@ form {
 }
 
 button.form-button {
-	padding: 5px 10px;
+	padding: 5px 20px;
 	height: 14px;
 	line-height: 14px;
 	box-sizing: content-box;
@@ -832,6 +855,54 @@ button.form-button {
 	color: white;
 	text-shadow: 0 -1px #429ba3;
 	cursor: pointer;
+	margin-top: 10px;
+	&:hover {
+		background-position: 0 -24px;
+	}
+	&:active {
+		background-position: 0 -48px;
+	}
+}
+
+button.submit-large {
+	box-sizing: border-box;
+	height: 46px;
+	line-height: 24px;
+	padding: 11px 62px;
+	background: url(../image/submit-large.png) repeat-x;
+	border: 1px solid #20a086;
+	border-radius: 5px;
+	font-size: 24px;
+	color: white;
+	font-weight: bold;
+	text-shadow: 0 -1px #43a976;
+	outline: none;
+	&:hover {
+		background-position: 0 -46px;
+	}
+	&:active {
+		background-position: 0 -92px;
+	}
+}
+
+input[disabled] {
+	background-color: #eee;
+	border: 1px solid #c1c1c1;
+	border-radius: 3px;
+	box-sizing: border-box;
+	height: 34px;
+	padding: 8px;
+}
+
+button {
+	height: 24px;
+	line-height: 24px;
+	outline: none;
+	border: 1px solid #cfcfcf;
+	border-radius: 2px;
+	padding: 0 8px;
+	text-shadow: 0 1px white;
+	background: url(../image/button.png) repeat-x;
 	&:hover {
 		background-position: 0 -24px;
 	}

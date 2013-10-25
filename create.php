@@ -202,12 +202,12 @@
 				</form>
 			</div>
 		</div>
-		<div class="panel advanced collapasible">
+		<div class="panel advanced collapsible collapsed">
 			<div class="panel-header">
 				<h2>Advanced</h2>
 			</div>
 			<div class="panel-content">
-				<h3>Redirect</h2>
+				<h3>Redirect</h3>
 				<form>
 					<div class="field">
 						<label></label>
@@ -222,16 +222,148 @@
 									</select>
 									<select class="short" placeholder="compare">
 										<option value="">=</option>
+										<option value="">&gt;</option>
+										<option value="">&lt;</option>
 									</select>
+									<input type="text" />
 								</li>
-								<li class="sub-item gray closable">
-									<label for=""></label>
+								<li class="def and-condition sub-item gray closable">
+									<label class="short">And</label>
+									<select class="short" placeholder="param...">
+										<option value="">Param1</option>
+									</select>
+									<select class="short" placeholder="compare">
+										<option value="">=</option>
+										<option value="">&gt;</option>
+										<option value="">&lt;</option>
+									</select>
+									<input type="text" />
+									<a class="close round"></a>
+								</li>
+								<li class="def or-condition sub-item gray closable">
+									<label class="short">Or</label>
+									<select class="short" placeholder="param...">
+										<option value="">Param1</option>
+									</select>
+									<select class="short" placeholder="compare">
+										<option value="">=</option>
+										<option value="">&gt;</option>
+										<option value="">&lt;</option>
+									</select>
+									<input type="text" />
+									<a class="close round"></a>
 								</li>
 							</ul>
+							<select class="split-button" placeholder="Add new rule">
+								<option value=".and-condition">And</option>
+								<option value=".or-condition">Or</option>
+							</select>
 						</div>
-						<span class="IF"></span>
+					</div>
+					<div class="field">
+						<label></label>
+						<div class="redirect">				
+							<h3>Then redirect to</h3>
+							<ul>
+								<li class="def rule-redirect-url sub-item gray closable">
+									<label>URL</label>
+									<select placeholder="select a group">
+										<option>Group1</option>
+									</select>
+									<span>share</span>
+									<input type="text" class="short" />
+									<span>%</span>
+									<a class="close round"></a>
+								</li>
+							</ul>
+							<button type="button" class="form-button">Add New URL</button>
+						</div>
 					</div>
 				</form>
+				<hr>
+				<h3>Alert setting</h3>
+				<form class="alert-settings">
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" checked />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" checked />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short">
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" checked />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+					<div class="field">
+						<label for=""></label>
+						<input type="checkbox" class="switch" />
+						<span>当天click点击比前一天高出</span>
+						<input type="text" class="short" />
+						<span>个</span>
+					</div>
+				</form>
+			</div>
+		</div>		
+		<div class="submit">
+			<button class="submit-large">Save Campaign</button>
+		</div>
+		<div class="panel improvely-code">
+			<div class="panel-header">
+				<h2>Improvely Code</h2>
+			</div>
+			<div class="panel-content">
+				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
+				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.
+</p>
+				<div class="copy-url">
+					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
+					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>
+				</div>
+				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
+				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.
+</p>
+				<div class="copy-url">
+					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
+					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>
+				</div>
 			</div>
 		</div>
 	</div>

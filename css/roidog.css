@@ -1,4 +1,4 @@
-body,div,ul,li,p,h1,h2,h3,h4,h5{margin:0;padding:0;list-style:none}
+body,div,ul,li,p,h1,h2,h3,h4,h5{margin:0;padding:0;list-style:none;color:#53585d}
 a{cursor:pointer;color:#3bbded;text-decoration:none}a:hover{color:#288dc6}
 body{background:url(../image/background.png) repeat;font-family:Arial}
 div.tooltip{position:absolute;width:150px;background-color:#4b4e4f;color:#fff;font-size:12px;border-radius:5px;padding:5px 10px;box-shadow:0 3px 6px rgba(56,55,51,0.3)}div.tooltip div.knock{position:absolute;bottom:-7px;width:6px;height:7px;left:5px;background:url(../image/tooltip_knock.png)}
@@ -33,6 +33,9 @@ div.header ul.drop-down-menu.flat li.spliter-down a{border-bottom:1px solid #444
 div.header ul.drop-down-menu.flat li.spliter-up a{border-top:1px solid #8f9499}
 div.content{margin-top:10px;overflow:hidden}
 div.panel.half-size{float:left;width:390px;margin-right:2px;margin-top:10px}
+div.panel.collapsible .panel-header h2{cursor:pointer;padding-right:30px;background:url(../image/fold2.png) right -34px no-repeat}
+div.panel.collapsible.collapsed .panel-header h2{background-position:right 0}
+div.panel.collapsible.collapsed .panel-content{display:none}
 div.tab-container ul.tab{background-color:#ebeae6;height:34px;border-bottom:2px solid #59b1b9;display:inline-block;vertical-align:middle}div.tab-container ul.tab li{display:inline-block;font-size:14px;height:34px;line-height:34px;overflow:hidden;color:#3bbded;cursor:pointer;padding:0 15px}div.tab-container ul.tab li:hover{color:#288dc6}
 div.tab-container ul.tab li.active{background-color:#f6f5f1;border-top:2px solid #3bbded;color:#53585d;cursor:default;line-height:32px}div.tab-container ul.tab li.active:hover{color:#53585d}
 div.tab-container ul.tab.block{display:block;border-bottom:none;height:50px;background-color:#eff3f4}div.tab-container ul.tab.block li{display:block;float:left;height:50px;line-height:50px;background-color:#f2f7f8}div.tab-container ul.tab.block li.active{border-top:none;background-color:#fff}
@@ -81,14 +84,19 @@ form .field>a{display:inline-block;height:24px;line-height:24px;margin-left:10px
 form .field.top-align label{vertical-align:top}
 form .field li.sub-item{height:40px;line-height:40px;background-color:#fff;border-bottom:1px solid #e7e6e0;position:relative}form .field li.sub-item.gray{background-color:#f9f9f9;border-bottom-color:#e7e6e0}
 form .field li.sub-item:last-child{border-bottom:none}
-form .field li.sub-item>label{width:145px;padding-left:10px;display:inline-block}
+form .field li.sub-item>label{width:145px;padding-left:10px;display:inline-block}form .field li.sub-item>label.short{width:53px}
 form .field li.sub-item input{width:140px}
 form .field li.sub-item input.short{width:40px}
 form .field li.sub-item>span{padding:0 5px}
-form .field li.sub-item select{width:140px}
+form .field li.sub-item select{width:140px}form .field li.sub-item select.short{width:14px;margin-right:15px}
 form .padding-box{padding:20px 0 0}
-button.form-button{padding:5px 10px;height:14px;line-height:14px;box-sizing:content-box;border:1px solid #718486;border-radius:4px;background:url(../image/form-button.png) repeat-x;outline:none;color:#fff;text-shadow:0 -1px #429ba3;cursor:pointer}button.form-button:hover{background-position:0 -24px}
+button.form-button{padding:5px 20px;height:14px;line-height:14px;box-sizing:content-box;border:1px solid #718486;border-radius:4px;background:url(../image/form-button.png) repeat-x;outline:none;color:#fff;text-shadow:0 -1px #429ba3;cursor:pointer;margin-top:10px}button.form-button:hover{background-position:0 -24px}
 button.form-button:active{background-position:0 -48px}
+button.submit-large{box-sizing:border-box;height:46px;line-height:24px;padding:11px 62px;background:url(../image/submit-large.png) repeat-x;border:1px solid #20a086;border-radius:5px;font-size:24px;color:#fff;font-weight:bold;text-shadow:0 -1px #43a976;outline:none}button.submit-large:hover{background-position:0 -46px}
+button.submit-large:active{background-position:0 -92px}
+input[disabled]{background-color:#eee;border:1px solid #c1c1c1;border-radius:3px;box-sizing:border-box;height:34px;padding:8px}
+button{height:24px;line-height:24px;outline:none;border:1px solid #cfcfcf;border-radius:2px;padding:0 8px;text-shadow:0 1px #fff;background:url(../image/button.png) repeat-x}button:hover{background-position:0 -24px}
+button:active{background-position:0 -48px}
 .empty{display:none}
 .close{background-image:url(../image/close-button.png);background-repeat:no-repeat;display:block;position:absolute;width:20px;height:20px;top:50%;margin-top:-10px;right:10px;cursor:pointer}.close:hover{background-position:0 -20px}
 .close.square{background-color:#3bbded;background-position:2px -118px;padding:2px;right:0;top:0;margin-top:0}.close.square:hover{background-color:#6acdf1}

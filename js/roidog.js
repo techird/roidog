@@ -8,6 +8,11 @@ $(function () {
 		});
 	});
 
+/* Collapasible */
+	$('body').delegate('div.panel.collapsible .panel-header h2', 'click', function(e) {
+		$(e.target).closest('.panel').toggleClass('collapsed');
+	});
+
 /* Tab Widget */
 	$('.tab-container').delegate('ul.tab li', 'click', function(e) {
 		var li, index, container;
@@ -133,7 +138,11 @@ $(function () {
 		});
 		$label.html(markdown(text || $select.children("option").first().text()));
 
-		var width = Math.max($label.width(), $select.width())
+		var $detect = $select.clone().appendTo('body');
+		var $detect2 = $label.clone().appendTo('body');
+		var width = Math.max($detect2.width(), $detect.width());
+		$detect.remove();
+		$detect2.remove();
 
 		$div.css("width", width);
 		$popup.children().css("width", width);

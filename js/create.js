@@ -99,5 +99,23 @@ $(function () {
 			var $li = $.def($(e.target).val()).css("display", "none");
 			$ul.append($li);
 			$li.slideDown("fast");
+		});
+
+	$('.panel.advanced')
+		.delegate('.condition select.split-button option', 'selected', function(e) {
+			var $ul = $(e.target).parent().prev();
+			var $li = $.def($(e.target).val()).css("display", "none");
+			$ul.append($li);
+			$li.slideDown("fast");
 		})
+		.delegate('.redirect button.form-button', 'click', function(e) {
+			var li = $.def('.rule-redirect-url').css("display", 'none');
+			$(e.target).prev().append(li);
+			li.slideDown('fast');
+		});
+
+	$('.panel.improvely-code')
+		.delegate('div.copy-url button', 'click', function(e) {
+			var url = $(e.target).prev()[0].select(-1);
+		});
 })
