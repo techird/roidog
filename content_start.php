@@ -18,10 +18,9 @@
 				<li class="i4">
 					<a class="drop-down">Meta Data</a>
 					<ul class="drop-down-menu">
-						<li class="knock"></li>
-						<li class="first-item"><a>Parameter Report</a></li>	
+						<li><a>Parameter Report</a></li>	
 						<li><a>Age Report</a></li>
-						<li class="last-item"><a>Show me a menu</a></li>
+						<li><a>Show me a menu</a></li>
 					</ul>
 				</li>
 				<li class="i5">
@@ -37,10 +36,9 @@
 				<li class="user">
 					<a class="drop-down"></a>
 					<ul class="drop-down-menu flat">
-						<li class="knock"></li>
-						<li class="first-item"><a>Profile</a></li>						
+						<li><a>Profile</a></li>						
 						<li class="spliter-down"><a>License</a></li>
-						<li class="last-item spliter-up"><a>Logout</a></li>
+						<li><a>Logout</a></li>
 					</ul>
 				</li>
 			</ul>

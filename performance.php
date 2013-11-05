@@ -50,9 +50,9 @@
 			<div class="panel-content">
 				<div class="trend-filter">
 					<div class="radio-group data-type-select">
-						<label class="check-widget first-child"><input type="radio" name="data-choise" />CLK</label>
+						<label class="check-widget"><input type="radio" name="data-choise" />CLK</label>
 						<label class="check-widget active"><input type="radio" name="data-choise" checked />Click/Conversion</label>
-						<label class="check-widget last-child"><input type="radio" name="data-choise" />CVS</label>
+						<label class="check-widget"><input type="radio" name="data-choise" />CVS</label>
 						<label class="check-widget alone"><input type="checkbox" value="ROI" />ROI</label>
 						<label class="check-widget alone"><input type="checkbox" value="CR" />CR</label>
 					</div>
@@ -120,7 +120,7 @@
 			<div class="panel-content">
 				<table class="data-table">
 					<tr>
-						<th class="first-child name">Name</th>
+						<th class="name">Name</th>
 						<th>Views</th>
 						<th>Click through</th>
 						<th>CTR</th>
@@ -132,10 +132,10 @@
 						<th>Net</th>
 						<th>CPA</th>
 						<th>ROL</th>
-						<th class="last-child"></th>
+						<th></th>
 					</tr>
-					<tr class="first-child">
-						<td class="first-child">cn.affofice.com</td>
+					<tr>
+						<td>cn.affofice.com</td>
 						<td>2973</td>
 						<td>243</td>
 						<td>9.645%</td>
@@ -147,7 +147,7 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td class="last-child fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
+						<td class="fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
 					</tr>
 					<tr class="landing-page-detail hidden">
 						<td class="indent"></td>
@@ -207,7 +207,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="first-child">cn.affofice.com</td>
+						<td>cn.affofice.com</td>
 						<td>2973</td>
 						<td>243</td>
 						<td>9.645%</td>
@@ -219,7 +219,7 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td class="last-child fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
+						<td class="fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
 					</tr>
 					<tr class="landing-page-detail hidden">
 						<td class="indent"></td>
@@ -279,7 +279,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td class="first-child">cn.affofice.com</td>
+						<td>cn.affofice.com</td>
 						<td>2973</td>
 						<td>243</td>
 						<td>9.645%</td>
@@ -291,7 +291,7 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td class="last-child fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
+						<td class="fold-action"><a class="fold">fold</a><a class="unfold">unfold</a></td>
 					</tr>
 					<tr class="landing-page-detail hidden">
 						<td class="indent"></td>
@@ -359,8 +359,8 @@
 			<div class="panel-header"><h2>Compaign URLs</h2></div>
 			<div class="panel-content">
 				<table class="data-table">
-					<tr class="first-child">
-						<th class="first-child">Name</th>
+					<tr>
+						<th>Name</th>
 						<th>Click</th>
 						<th>Conversation</th>
 						<th>CR</th>
@@ -371,7 +371,7 @@
 						<th>ROL</th>
 					</tr>
 					<tr>
-						<td class="first-child">link1(demoTraffic 1)</td>
+						<td>link1(demoTraffic 1)</td>
 						<td>2509</td>
 						<td>3</td>
 						<td>0.12%</td>
@@ -382,7 +382,7 @@
 						<td>0%</td>
 					</tr>
 					<tr>
-						<td class="first-child">top link of direct landing page(DemoTraffic 2)</td>
+						<td>top link of direct landing page(DemoTraffic 2)</td>
 						<td>100</td>
 						<td>0</td>
 						<td>0%</td>
@@ -409,9 +409,9 @@
 				<div class="chart">
 					<h3>
 						<div class="radio-group">
-							<label class="check-widget first-child"><input type="radio" value="1" />CLK</label>
+							<label class="check-widget"><input type="radio" value="1" />CLK</label>
 							<label class="check-widget active"><input type="radio" value="2" checked />Click/Conversion</label>
-							<label class="check-widget last-child"><input type="radio" value="3" />CVS</label>
+							<label class="check-widget"><input type="radio" value="3" />CVS</label>
 						</div>
 					</h3>
 					<img src="image/p2.png" />
@@ -429,9 +429,9 @@
 				<div class="chart">
 					<h3>
 						<div class="radio-group">
-							<label class="check-widget first-child"><input type="radio" value="1" />CLK</label>
+							<label class="check-widget"><input type="radio" value="1" />CLK</label>
 							<label class="check-widget active"><input type="radio" value="2" checked />Click/Conversion</label>
-							<label class="check-widget last-child"><input type="radio" value="3" />CVS</label>
+							<label class="check-widget"><input type="radio" value="3" />CVS</label>
 						</div>
 					</h3>
 					<img src="image/p2.png" />
@@ -461,9 +461,9 @@
 				<div class="chart">
 					<h3>
 						<div class="radio-group">
-							<label class="check-widget first-child"><input type="radio" value="1" />CLK</label>
+							<label class="check-widget"><input type="radio" value="1" />CLK</label>
 							<label class="check-widget active"><input type="radio" value="2" checked />Click/Conversion</label>
-							<label class="check-widget last-child"><input type="radio" value="3" />CVS</label>
+							<label class="check-widget"><input type="radio" value="3" />CVS</label>
 						</div>
 					</h3>
 					<img src="image/p5.png" />
@@ -481,9 +481,9 @@
 				<div class="chart">
 					<h3>
 						<div class="radio-group">
-							<label class="check-widget first-child"><input type="radio" value="1" />CLK</label>
+							<label class="check-widget"><input type="radio" value="1" />CLK</label>
 							<label class="check-widget active"><input type="radio" value="2" checked />Click/Conversion</label>
-							<label class="check-widget last-child"><input type="radio" value="3" />CVS</label>
+							<label class="check-widget"><input type="radio" value="3" />CVS</label>
 						</div>
 					</h3>
 					<img src="image/p5.png" />
@@ -501,9 +501,9 @@
 				<div class="chart">
 					<h3>
 						<div class="radio-group">
-							<label class="check-widget first-child"><input type="radio" value="1" />CLK</label>
+							<label class="check-widget"><input type="radio" value="1" />CLK</label>
 							<label class="check-widget active"><input type="radio" value="2" checked />Click/Conversion</label>
-							<label class="check-widget last-child"><input type="radio" value="3" />CVS</label>
+							<label class="check-widget"><input type="radio" value="3" />CVS</label>
 						</div>
 					</h3>
 					<img src="image/p5.png" />

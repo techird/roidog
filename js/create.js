@@ -118,4 +118,16 @@ $(function () {
 		.delegate('div.copy-url button', 'click', function(e) {
 			var url = $(e.target).prev()[0].select(-1);
 		});
-})
+
+	$('a.open-new-offer-dialog').click(function() {
+		$('#new-offer-dialog').showDialog();
+	});
+
+	$('a.new-network-expander').click(function(){
+		var expanded = $(this).toggleClass('expanded').hasClass('expanded');
+		var subform = $(this).parent().next();
+		subform['slide' + (expanded ? 'Down' : 'Up')]('fast', function() {
+			$('#new-offer-dialog').centerDialog();
+		});
+	});
+});

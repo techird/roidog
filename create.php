@@ -8,6 +8,69 @@
 </head>
 <body>	
 
+	<div id="new-offer-dialog" class="dialog-widget">
+	    <div class="dialog-title"><h2>Create New Offer</h2></div>
+	    <div class="dialog-content">
+	        <form class="stand-alone longer">
+	            <div class="field">
+	                <label>Offer Name<span class="required">*</span></label>
+	                <input type="text">
+	            </div>
+	            <div class="field">
+	                <label>Offer URL<span class="required">*</span></label>
+	                <input type="text">
+	            </div>
+	            <div class="field">
+	                <label>Affiliate Network</label>
+	                <select placeholder="Select a network...">
+	                    <option selected="selected">Net 1</option>
+	                    <option>Net 2</option>
+	                </select>
+	                <a class="new-network-expander">New Network</a>
+	            </div>
+	            <div class="sub-form">
+	            	<div class="field">
+	            		<label for="">Name<span class="required">*</span></label>
+	            		<input type="text">
+	            	</div>
+	            	<div class="field">
+	            		<label for="">Host</label>
+	            		<input type="text">
+	            	</div>
+	            	<div class="field">
+	            		<label for="">Subid Key<span class="required">*</span></label>
+	            		<input type="text">
+	            	</div>
+	            	<div class="field">
+	            		<label for="">Cloak<span class="required">*</span></label>
+	            		<select name="" id="">
+	            			<option value="">Yes</option>
+	            			<option value="">No</option>
+	            		</select>
+	            	</div>
+	            	<div class="field">
+	            		<label for="">Description<span class="required">*</span></label>
+	            		<textarea></textarea>
+	            	</div>
+	            	<div class="padding-box"></div>
+	            	<div class="field">
+	            		<label></label>
+	            		<button class="form-button save-network-button" type="button">Save</button>
+	            	</div>
+	            </div>
+	            <div class="field">
+	                <label>Payout</label>
+	                <span class="dollor-mark"></span><input type="dollor" class="dollor">
+	            </div>
+	            <div class="padding-box"></div>
+	            <div class="field">
+	                <label></label>
+	                <button id="save-offer-btn" class="submit small">Save</button>
+	                <a class="close-dialog">Cancel</a>
+	            </div>
+	        </form>
+	    </div>
+	</div>
 	<?php include 'content_start.php' ?>
 	
 	<div class="create-form-container">
@@ -18,16 +81,16 @@
 				<input type="text" name="name" />
 			</div>
 			<div class="field">
-				<label for="mobile">Mobile</label>
-				<input type="checkbox" class="switch" />
-			</div>
-			<div class="field">
 				<label for="active">Active</label>
 				<input type="checkbox" class="switch" />
 			</div>
 			<div class="field">
+				<label for="mobile">Mobile</label>
+				<input type="checkbox" class="switch" />
+			</div>
+			<div class="field">
 				<label for="group">Group</label>
-				<select name="group" style="form-select" placeholder="select a group">
+				<select name="group" class="form-select" style="width: 150px;" placeholder="select a group">
 					<option value="">Group1</option>
 					<option value="">Group2</option>
 				</select>
@@ -35,7 +98,7 @@
 			</div>
 			<div class="field">
 				<label for="timezone">Time Zone</label>
-				<select name="timezone" placeholder="select a time zone">
+				<select name="timezone" placeholder="select a time zone" style="width: 150px;" >
 					<option value="">Beijing (UTC + 8:00)</option>
 				</select>
 			</div>
@@ -53,7 +116,7 @@
 						<ul></ul>
 					</div>
 				</div>
-				<a href="">New Offer</a>
+				<a class="open-new-offer-dialog">New Offer</a>
 			</div>
 		</form>
 		<div class="panel landing-page tab-container">
@@ -67,11 +130,11 @@
 				<form>
 					<div class="field">
 						<label>Landing Page Name</label>
-						<input type="text" />
+						<input type="text" class="longer" />
 					</div>
 					<div class="field">
 						<label>Landing Page URL</label>
-						<input type="text" />
+						<input type="text" class="longer" />
 					</div>	
 				</form>					
 				<div class="def new-output closable">
@@ -79,7 +142,7 @@
 					<form>
 						<div class="field">
 							<label>output name</label>
-							<input type="text" >
+							<input type="text" class="longer" >
 						</div>
 						<div class="field top-align empty">
 							<label></label>
@@ -120,6 +183,7 @@
 					</form>
 				</div>
 				<button class="new-output-btn form-button" type="button">New output link</button>
+				<a class="remove-tab">Delete this Landing Page</a>
 			</div>
 		</div>
 		<div class="panel campaign-url tab-container">
@@ -137,7 +201,7 @@
 					</div>
 					<div class="field">
 						<label>Traffic Souce</label>
-						<select placeholder="select a group">
+						<select placeholder="select a group" style="width: 150px;">
 							<option value="group">Group1</option>
 						</select>
 						<a>New Group</a>
@@ -148,7 +212,7 @@
 					</div>
 					<div class="field">
 						<label>Keyword Token</label>
-						<input type="text" />
+						<input type="text" value="roidog_kw" disabled />
 						<label>Keyword Value</label>
 						<input type="text" />
 					</div>
@@ -200,6 +264,7 @@
 						</div>
 					</div>
 				</form>
+				<a class="remove-tab">Delete this URL</a>
 			</div>
 		</div>
 		<div class="panel advanced collapsible collapsed">
@@ -343,7 +408,7 @@
 			</div>
 		</div>		
 		<div class="submit">
-			<button class="submit-large">Save Campaign</button>
+			<button class="submit large">Save Campaign</button>
 		</div>
 		<div class="panel improvely-code">
 			<div class="panel-header">
@@ -351,15 +416,13 @@
 			</div>
 			<div class="panel-content">
 				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
-				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.
-</p>
+				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.</p>
 				<div class="copy-url">
 					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
 					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>
 				</div>
 				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
-				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.
-</p>
+				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.</p>
 				<div class="copy-url">
 					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
 					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>

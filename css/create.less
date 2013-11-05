@@ -24,6 +24,7 @@ div.create-form-container {
 		border-radius: 2px;
 		width: 510px;
 		line-height: 24px;
+		margin-top: 7px;
 		.selected {
 			padding: 5px 10px 0;
 			border-bottom: 1px solid #dcdad1;
@@ -72,6 +73,7 @@ div.create-form-container {
 	.landing-page .panel-content {
 		background-color: white;
 		padding-bottom: 30px;
+		position: relative;
 
 		.new-output-btn {
 			margin-left: 38px;
@@ -95,9 +97,16 @@ div.create-form-container {
 				}	
 			}
 		}
+		a.remove-tab {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			font-size: 12px;
+		}
 	}
 
 	.campaign-url .panel-content {
+		position: relative;
 		div.param-container {
 			display: inline-block;
 			ul {
@@ -109,6 +118,12 @@ div.create-form-container {
 			& > ul {
 				width: 510px;
 			}
+		}
+		a.remove-tab {
+			position: absolute;
+			right: 10px;
+			bottom: 10px;
+			font-size: 12px;
 		}
 	}
 
@@ -193,6 +208,71 @@ div.create-form-container {
 			input {
 				width: 845px;
 			}
+		}
+	}
+}
+
+#new-offer-dialog {
+	div.field > input,
+	div.field > textarea {
+		width: 270px;
+		&[type=dollor] {
+			width: 100px;
+		}
+	}
+	.save-network-button {
+		padding: 4px 80px;
+		position: relative;
+		&:before {
+			content: 'Fields with * are required';
+			color: #9d9d9d;
+			font-size: 12px;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: -20px;
+			text-align: center;
+			text-shadow: none;			
+		}
+	}
+	.sub-form {
+		display: none;
+		margin: 5px -60px;
+		background: #e9f3f4;
+		border-top: 1px solid #59b1b9;
+		padding-left: 80px;
+		padding-bottom: 20px;
+		& > div.field > label {
+			width: 90px;
+		}
+	}
+	a.new-network-expander {
+		display: inline-block;
+		height: 24px;
+		color: white;
+		font-size: 14px;
+		background-color: #3bbded;
+		vertical-align: middle;
+		padding: 0 8px;
+		position: relative;
+		&:after {
+			content: ' ';
+			display: block;
+			width: 30px;
+			height: 24px;
+			position: absolute;
+			right: -30px;
+			top: 0;
+			background: url(../image/fold2.png) no-repeat right -6px;
+		}
+		&.expanded {
+			&:after {
+				background-position: right -40px;
+			}
+		}
+		&:hover {
+			background-color: #6ccaed;
 		}
 	}
 }

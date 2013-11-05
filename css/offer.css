@@ -1,0 +1,6 @@
+div.content-header button{margin:0}div.content-header button span.icon-add{vertical-align:middle;margin:0;font-size:16px;font-weight:bold;padding-right:5px;position:relative;top:-2px}
+table.offer-list th.name{width:300px}
+table.offer-list th.network{width:190px}
+table.offer-list th.payout{width:80px}
+table.offer-list th.action{width:80px}
+table.offer-list td:nth-child(2),table.offer-list td:nth-child(4),table.offer-list td:last-child{text-align:center}

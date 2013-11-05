@@ -1,0 +1,5 @@
+table.data-table.stand-alone.network-list td{text-align:center}
+div.content-header button{margin:0}div.content-header button span.icon-add{vertical-align:middle;margin:0;font-size:16px;font-weight:bold;padding-right:5px;position:relative;top:-2px}
+#new-network-dialog div.padding-box{padding-top:30px}
+#new-network-dialog div.field .longer{width:320px}
+#new-network-dialog #save-network-btn{padding:6px 100px;position:relative}#new-network-dialog #save-network-btn:before{content:'Fields with * are required';color:#9d9d9d;font-size:12px;display:block;position:absolute;left:0;right:0;top:-20px;text-align:center;text-shadow:none}
