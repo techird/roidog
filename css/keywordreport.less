@@ -1,0 +1,43 @@
+table.data-table.stand-alone {
+    tr.expandable {
+        display: none;
+        &.expanded {
+            display: table-row;
+        }
+        td {
+            background: none;
+            padding: 0 25px;
+            text-align: left;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: normal;
+            height: 50px;
+            line-height: 50px;
+        }
+        .radio-group {
+            margin: 0;
+        }
+        div.ctrl {
+            margin: 15px 0;
+            position: relative;
+            div.image-container {
+                width: 419px;
+                height: 172px;
+                border: 1px solid #dcdad1;
+                background-color: white;
+                border-radius: 4px;
+            }
+            div.actions {
+                position: absolute;
+                left: 440px;
+                top: -8px;
+                width: 200px;
+                overflow: visible;
+            }
+        }
+    }
+    td {
+        text-align: center;
+    }
+}

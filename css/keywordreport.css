@@ -1,0 +1,7 @@
+table.data-table.stand-alone tr.expandable{display:none}table.data-table.stand-alone tr.expandable.expanded{display:table-row}
+table.data-table.stand-alone tr.expandable td{background:none;padding:0 25px;text-align:left}
+table.data-table.stand-alone tr.expandable h3{font-size:18px;font-weight:normal;height:50px;line-height:50px}
+table.data-table.stand-alone tr.expandable .radio-group{margin:0}
+table.data-table.stand-alone tr.expandable div.ctrl{margin:15px 0;position:relative}table.data-table.stand-alone tr.expandable div.ctrl div.image-container{width:419px;height:172px;border:1px solid #dcdad1;background-color:#fff;border-radius:4px}
+table.data-table.stand-alone tr.expandable div.ctrl div.actions{position:absolute;left:440px;top:-8px;width:200px;overflow:visible}
+table.data-table.stand-alone td{text-align:center}

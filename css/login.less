@@ -1,0 +1,113 @@
+h1 {
+    width: 150px;
+    height: 50px;
+    background-color: #edece9;
+    background-image: url(../image/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 70px auto 50px;
+    text-indent: -100000px;
+    border-radius: 8px;
+}
+
+form.login {
+    padding: 25px 100px;
+    width: 261px;
+    border-radius: 6px;
+    box-shadow: 0 0 3px rgba(127, 127, 127, .5);
+    margin: 0 auto;
+    div.field {
+        height: 47px;
+        line-height: 47px;
+        label {
+            width: auto;
+        }
+        label.user, label.pass {
+            width: 37px;
+            height: 34px;
+            line-height: 34px;
+            text-indent: -100000px;
+            background: url(../image/login-res.png) repeat-x;
+            position: relative;
+            border: 1px solid #dddddb;
+            border-radius: 6px 0 0 6px;
+            &:after {
+                content: ' ';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 50%;
+                top: 50%;
+                margin-left: -9px;
+                margin-top: -9px;
+                background: url(../image/login-res.png) no-repeat;
+            }
+        }
+        label.user:after {
+            background-position: 0 -102px;
+        }
+        label.pass:after {
+            background-position: 0 -122px;
+        }
+        input[type=text], input[type=password] {
+            width: 200px;
+            padding: 5px 8px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid #edece9;
+            border-left: none;
+            border-radius: 0 6px 6px 0;
+        }
+        &.remember {
+            line-height: 24px;
+            margin-top: 5px;
+            height: auto;
+            a.forgot-link {
+                margin-left: 19px;
+            }
+        }
+    }
+    div.alert {
+        display: none;
+        margin-top: 6px;
+        padding: 0 22px 0 28px;
+        width: 208px;
+        background-color: #bf3f3a;
+        color: white;
+        line-height: 22px;
+        font-size: 12px;
+        position: relative;
+        border-radius: 4px;
+        &:before {
+            content: ' ';
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            width: 20px;
+            height: 20px;
+            background: url(../image/login-res.png) 0 -142px;
+        }
+    }
+    button.login-button {
+        text-align: center;
+        height: 34px;
+        line-height: 29px;
+        color: #656565;
+        width: 259px;
+        border: 1px solid #CCC;
+        border-radius: 6px;
+        background: url(../image/login-res.png) repeat-x;
+        margin-top: 15px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 0 1px white;
+        outline: none;
+        &:hover {
+            background-position: 0 -34px;
+        }
+        &:active {
+            background-position: 0 -68px;
+        }
+    }
+}
