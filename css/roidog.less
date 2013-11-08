@@ -215,7 +215,7 @@ div.action {
 					background-position: 0 -120px;
 				}
 			}
-			&.edit {
+			&.feedback {
 				background-position: 0 -24px;
 				&:hover {
 					background-position: 0 -96px;
@@ -399,19 +399,12 @@ div.tab-container {
 					border-top: none;
 					background-color: white;
 				}
-				&.growth-button {
-					height: 30px;
-					width: 45px;
-					padding: 0;
-					background: url(../image/growth-button.png) no-repeat 0 0;
-					&:hover {
-						background-position: 0 -30px;
-					}
-					&:active {
-						background-position: 0 -60px;
-					}
-					margin: 10px 20px;
-				}
+                &.growth-button {
+                    margin: 10px 20px;
+				    height: 30px;
+				    width: 45px;
+				    background-color: transparent;
+                }
 			}
 			&:after {
 				content: ' ';
@@ -428,6 +421,24 @@ div.tab-container {
 			display: block;
 		}
 	}
+}
+
+.growth-button {
+    height: 30px;
+    width: 45px;
+    padding: 0;
+    background: url(../image/growth-button.png) no-repeat 0 0;
+    &:hover {
+        background-position: 0 -30px;
+    }
+    &:active {
+        background-position: 0 -60px;
+    }
+    box-sizing: content-box;
+    border: none;
+    text-indent: -10000px;
+    outline: none;
+    vertical-align: middle;
 }
 
 div.panel-header {
@@ -488,6 +499,10 @@ ul.popup-list {
 	position: relative;
 	display: inline-block;
 	cursor: pointer;
+    &.removable {
+        border-radius: 4px 0 0 4px;
+        border-right: none;
+    }
 	label {
 		font-weight: normal;
 		margin: 0;
@@ -516,6 +531,29 @@ ul.popup-list {
 		padding-left: 18px;
 		background: url(../image/calendar.png) left -1px no-repeat;
 	}
+}
+
+button.select-widget-remove-button {
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    color: #ed1414;
+    text-shadow: 0 1px white;
+    font-size: 18px;
+    width: 29px;
+    box-sizing: content-box;
+    padding: 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #e4e4e4;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+        background-color: #efefef;
+    }
 }
 
 
@@ -621,14 +659,41 @@ div.content-header {
         color: #333;
         font-size: 18px;
     }
-    hr {
-        border: none;
-        height: 0;
-        border-bottom: 1px solid #dfded8;
+    hr {            
+        margin-top: 10px;
         margin-bottom: 15px;
     }
+    button {
+    	margin: 0;
+	}
 }
 
+hr {
+    border: none;
+    height: 0;
+    border-bottom: 1px solid #dfded8;
+    margin: 0;
+}
+
+table.name-value {
+    width: 600px;
+    margin-left: 30px;
+    margin-top: -20px;
+    font-size: 12px;
+    color: #53585d;
+    border-collapse: collapse;
+    td {
+        padding: 10px;
+        background-color: white;
+        border-bottom: 1px solid #eeede8;
+        &:first-child {
+            width: 50%;
+            font-weight: bold;
+            background-color: #d1ecee;
+            border-bottom: 1px solid #afd3d7;
+        }
+    }
+}
 
 table.data-table {
 	width: 100%;
@@ -1251,4 +1316,80 @@ body.masked:after {
 	-webkit-animation: fade .5s ease 0 1;
 	-o-animation: fade .5s ease 0 1;
 	animation: fade .5s ease 0 1;
+}
+
+
+span.icon-add {
+    vertical-align: middle;
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 5px;
+    position: relative;
+    top: -2px;
+}
+
+
+span.type-mobile, span.type-pc, span.status-pause, span.status-running {
+    display: inline-block;
+    height: 30px;
+    background: url(../image/campaign-icons.png) no-repeat;
+}
+span.type-mobile {
+    width: 30px;
+    background-position: 0 0;
+}
+span.type-pc {
+    width: 35px;
+    background-position: -30px 0;
+}
+span.status-running {
+    width: 15px;
+    background-position: -65px 0;
+}
+span.status-pause {
+    width: 15px;
+    background-position: -80px 0;
+}
+span.up-going {
+    color: #52a450;
+}
+span.down-going {
+    color: #e4534e;
+}
+
+#feedback-dialog {
+	div.dialog-content {
+		padding: 0 36px;
+		form {
+			padding: 0;
+			div.field {
+				& > label {
+					display: block;
+					text-align: left;
+					line-height: 50px;
+					height: 43px;
+					padding: 0;
+					font-size: 14px;
+					width: auto;
+				}
+				textarea {
+					width: 520px;
+					height: 120px;
+					resize: none;
+				}
+				div.check-group {
+					height: 24px;
+					line-height: 16px;
+				}
+			}
+			div.submit {
+				text-align: center;
+				padding: 30px 0 20px;
+				button.submit.small {
+					width: 120px;
+				}
+			}
+		}
+	}
 }

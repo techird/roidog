@@ -1,0 +1,5 @@
+div.filter{line-height:45px}div.filter>label{font-style:14px;width:100px;text-align:right;display:inline-block;padding-right:15px;font-size:14px;color:#53585d}
+div.filter div.select-widget{margin-right:25px}div.filter div.select-widget.removable{margin-right:0}
+div.filter .select-widget-remove-button{margin-right:25px}
+div.submit{padding:15px 0 15px 150px}div.submit button.submit.small{font-size:14px;padding-left:30px;padding-right:30px}
+table.data-table.stand-alone td{text-align:center}

@@ -12,7 +12,7 @@
         <h1>License</h1>
         <hr>
     </div>
-    <table class="license-info">
+    <table class="name-value">
         <tr>
             <td>System Version</td>
             <td>0.4.1</td>

@@ -4,13 +4,6 @@ div.campaign-filter button{font-size:14px;font-weight:normal;margin-left:50px}
 #campaign-list th{padding:0 5px}
 #campaign-list td{text-align:center}#campaign-list td:first-child{width:40px}
 #campaign-list td:nth-child(2){width:160px}
-#campaign-list span.type-mobile,#campaign-list span.type-pc,#campaign-list span.status-pause,#campaign-list span.status-running{display:inline-block;height:30px;background:url(../image/campaign-icons.png) no-repeat}
-#campaign-list span.type-mobile{width:30px;background-position:0 0}
-#campaign-list span.type-pc{width:35px;background-position:-30px 0}
-#campaign-list span.status-running{width:15px;background-position:-65px 0}
-#campaign-list span.status-pause{width:15px;background-position:-80px 0}
-#campaign-list span.up-going{color:#52a450}
-#campaign-list span.down-going{color:#e4534e}
 #campaign-list .popup-list li{border-top:1px solid #efefef}#campaign-list .popup-list li:first-child{border-top:none}
 #campaign-list .popup-list li.action-alert,#campaign-list .popup-list li.action-get-url{border-top:2px solid #ccc}
 #campaing-url-dialog .dialog-title{position:relative}

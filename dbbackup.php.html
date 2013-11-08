@@ -1,4 +1,41 @@
-<div id="feedback-dialog" class="dialog-widget">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/roidog.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/roidog.js"></script>	<title>DB backup - Roidog</title>
+    <style>
+        h3 {
+            font-family: Helvetica;
+            font-size: 18px;
+            margin:  20px 0;
+            font-weight: normal;
+        }
+        button.submit.small, button.form-button {
+            font-size: 14px;
+        }
+        button.normal-btn {
+            position: relative;
+            overflow: hidden;
+        }
+        input[type=file] {
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+        form {
+            padding: 0;
+            background: none;
+        }
+    </style>
+</head>
+<body>	
+
+	<div id="feedback-dialog" class="dialog-widget">
 	<div class="dialog-title">
 		<h2>Send Feedback</h2>
 	</div>
@@ -82,4 +119,27 @@
 			</ul>
 		</div>
 	</div>
-	<div class="clear-fix"></div>
+	<div class="clear-fix"></div>    <div class="content-header">
+        <h1>DB backup</h1>
+        <hr>
+        <h3>backup your database</h3>
+        <button class="submit small">Backup your database</button>
+        <h3>Resore</h3>
+        <form>
+            <div class="field">
+                <input type="text">
+                <button class="normal-btn">Browse<input type="file" /></button>
+            </div>
+            <div class="field">
+                <button class="form-button">restore</button>
+            </div>
+        </form>
+    </div>
+		<div class="clear-fix"></div>
+</div>
+
+<div class="footer">
+	Copyright © Mosogic 2011—2013 All Right Reserved
+</div>
+</body>
+</html>

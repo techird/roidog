@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/roidog.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/roidog.js"></script>    <link rel="stylesheet" href="css/agereport.css">
+	<title>Age Report - Roidog</title>
+</head>
+<body>	
+
+	<div id="feedback-dialog" class="dialog-widget">
+	<div class="dialog-title">
+		<h2>Send Feedback</h2>
+	</div>
+	<div class="dialog-content">
+		<form>
+			<div class="field">
+				<label>Feedback</label>
+				<textarea></textarea>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="submit">
+				<button class="submit small">Send</button>
+				<a class="close-dialog">Cancel</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="head-line"></div>
+<div class="content-container">
+	<div class="header">
+		<div class="logo">
+			<h1>Roido</h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="i1">
+					<a>Campaigns</a>
+				</li>
+				<li class="i2">
+					<a>Split Test</a>
+				</li>
+				<li class="i3">
+					<a>Reports</a>
+				</li>
+				<li class="i4">
+					<a class="drop-down">Meta Data</a>
+					<ul class="drop-down-menu">
+						<li><a>Parameter Report</a></li>	
+						<li><a>Age Report</a></li>
+						<li><a>Show me a menu</a></li>
+					</ul>
+				</li>
+				<li class="i5">
+					<a>System</a>
+				</li>
+			</ul>
+		</div>
+		<div class="action">
+			<ul>
+				<li class="key"></li>
+				<li class="feedback"></li>
+				<li class="spliter"></li>
+				<li class="user">
+					<a class="drop-down"></a>
+					<ul class="drop-down-menu flat">
+						<li><a>Profile</a></li>						
+						<li class="spliter-down"><a>License</a></li>
+						<li><a>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear-fix"></div>    <div class="content-header age-report-filters">
+        <h1>Age Report</h1>
+        <hr>
+        <label class="lead-head">Filters</label>
+        <select placeholder="campaigns">
+            <option>campaign 1</option>
+            <option>campaign 2</option>
+        </select>
+        <select placeholder="traffic">
+            <option>traffic 1</option>
+            <option>traffic 2</option>
+        </select>
+        <select placeholder="2013-08-31">
+            <option>Today</option>
+            <option>Yesterday</option>
+        </select>
+        <select placeholder="Age Pattern">
+            <option>Pattern1</option>
+            <option>Pattern2</option>
+        </select>
+        <label><input type="checkbox" />Show Conversions Only</label>
+        <button type="button" class="submit small">Apply</button>
+    </div>
+    <div class="graph">
+        <div class="radio-group">
+            <label class="check-widget"><input type="radio" name="data-choise" />CLK</label>
+            <label class="check-widget active"><input type="radio" name="data-choise" checked />Click/Conversion</label>
+            <label class="check-widget"><input type="radio" name="data-choise" />CVS</label>
+        </div>
+        <br>
+        <img src="image/age-report.png" />
+    </div>
+    <table id="age-report" class="data-table stand-alone age-report">
+        <tr>
+            <th>Age</th>
+            <th>Clicks</th>
+            <th>Conversion</th>
+            <th>CR</th>
+            <th>Cost</th>
+            <th>Income</th>
+            <th>Net</th>
+            <th>ROI</th>
+            <th>CPA</th>
+        </tr>
+        <tr>
+            <td>25 - 30</td>
+            <td>225</td>
+            <td>30</td>
+            <td>8%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>31 - 35</td>
+            <td>122</td>
+            <td>14</td>
+            <td>2%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>36 - 40</td>
+            <td>234</td>
+            <td>5</td>
+            <td>6%</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="paging-widget" page-size-option="20 50 100 200" page-size="50" item-count="482" page-index="2"></div>
+		<div class="clear-fix"></div>
+</div>
+
+<div class="footer">
+	Copyright © Mosogic 2011—2013 All Right Reserved
+</div>
+</body>
+</html>

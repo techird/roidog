@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/roidog.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/roidog.js"></script>	<title>Campaigns - Roidog</title>
+    <link rel="stylesheet" href="css/campaign.css">
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/campaign.js"></script>
+</head>
+<body>	
+
+    <div id="campaing-url-dialog" class="dialog-widget active">
+        <div class="dialog-title"><h2>Campaign URL</h2><a class="close round close-dialog"></a></div>
+        <div class="dialog-content">
+            <h3>Landing Page 1</h3>
+            <p>Lorem ipsum doior sit amet,maiores ornare ac fermentum,imperdiet ut vivamus a,nam lectus at nunc,Quam ruismod sem,semper ut poten Lorem ipsum doior sit amet,maiores ornare ac fermentum</p>
+            <textarea disabled>http://chtrack.com/roidogforuidesign/bell/ad.php?a=12</textarea>
+            <button class="form-button" type="button">Copy</button>
+            <hr>
+            <h3>Landing Page 2</h3>
+            <p>Lorem ipsum doior sit amet,maiores ornare ac fermentum,imperdiet ut vivamus a,nam lectus at nunc,Quam ruismod sem,semper ut poten Lorem ipsum doior sit amet,maiores ornare ac fermentum</p>
+            <textarea disabled>http://chtrack.com/roidogforuidesign/bell/ad.php?a=12</textarea>
+            <button class="form-button" type="button">Copy</button>
+        </div>
+    </div>
+	<div id="feedback-dialog" class="dialog-widget">
+	<div class="dialog-title">
+		<h2>Send Feedback</h2>
+	</div>
+	<div class="dialog-content">
+		<form>
+			<div class="field">
+				<label>Feedback</label>
+				<textarea></textarea>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="submit">
+				<button class="submit small">Send</button>
+				<a class="close-dialog">Cancel</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="head-line"></div>
+<div class="content-container">
+	<div class="header">
+		<div class="logo">
+			<h1>Roido</h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="i1">
+					<a>Campaigns</a>
+				</li>
+				<li class="i2">
+					<a>Split Test</a>
+				</li>
+				<li class="i3">
+					<a>Reports</a>
+				</li>
+				<li class="i4">
+					<a class="drop-down">Meta Data</a>
+					<ul class="drop-down-menu">
+						<li><a>Parameter Report</a></li>	
+						<li><a>Age Report</a></li>
+						<li><a>Show me a menu</a></li>
+					</ul>
+				</li>
+				<li class="i5">
+					<a>System</a>
+				</li>
+			</ul>
+		</div>
+		<div class="action">
+			<ul>
+				<li class="key"></li>
+				<li class="feedback"></li>
+				<li class="spliter"></li>
+				<li class="user">
+					<a class="drop-down"></a>
+					<ul class="drop-down-menu flat">
+						<li><a>Profile</a></li>						
+						<li class="spliter-down"><a>License</a></li>
+						<li><a>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear-fix"></div>    <div class="content-header campaign-filter">
+        <h1>Campaign</h1>
+        <hr>
+        <span>Filter:</span>
+        <label>Type</label>
+        <select>
+            <option value="mobile" selected>Mobile</option>
+            <option value="pc">PC</option>
+        </select>
+        <label>Group</label>
+        <select>
+            <option value="womaijiu" selected>Womaijiu</option>
+            <option value="any">Any Group</option>
+        </select>
+        <label>Status</label>
+        <select>
+            <option value="active" selected>Active</option>
+            <option value="paused">Paused</option>
+        </select>
+        <button type="button" class="submit small">Apply</button>
+    </div>
+    <table class="data-table stand-alone" id="campaign-list">
+        <tr>
+            <th>Type</th>
+            <th>Campaign Name</th>
+            <th>Group</th>
+            <th>Status</th>
+            <th>Last Click</th>
+            <th>Click</th>
+            <th>Conversions</th>
+            <th>CR</th>
+            <th>Cost</th>
+            <th>Income</th>
+            <th>Net</th>
+            <th>EPC</th>
+            <th>ROI</th>
+            <th>CPA</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Item</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-pc"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Click</td>
+            <td><span class="status-pause"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Conversion</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Conversion</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-pc"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>CR</td>
+            <td><span class="status-pause"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-pc"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Cost</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>EPC</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Net</td>
+            <td><span class="status-pause"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td><a>demoForLpsplit Clore 13776651527</a></td>
+            <td>Income</td>
+            <td><span class="status-running"></span></td>
+            <td>*15: 05</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.000%</td>
+            <td>$ 135.5</td>
+            <td>$ 0.00</td>
+            <td><span class="down-going">$ 0.00</span></td>
+            <td>$ 0.00</td>
+            <td><span class="up-going">$ 0.000</span></td>
+            <td>$1.24</td>
+            <td><a class="action"></a></td>
+        </tr>
+    </table>
+    <div class="paging-widget" page-size-option="20 50 100 200" page-size="50" item-count="482" page-index="2"></div>
+		<div class="clear-fix"></div>
+</div>
+
+<div class="footer">
+	Copyright © Mosogic 2011—2013 All Right Reserved
+</div>
+</body>
+</html>

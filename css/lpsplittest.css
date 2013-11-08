@@ -1,0 +1,5 @@
+table#split-test-list td{padding:5px 8px;line-height:20px;text-align:center}
+ul.popup-list li.action-manage-group{border-top:1px solid #eee}
+#new-test-dialog .dialog-content{position:relative;padding-right:150px}#new-test-dialog .dialog-content form div.field{padding:4px 0}#new-test-dialog .dialog-content form div.field input.longer{width:280px}
+#new-test-dialog .dialog-content div.steps{position:absolute;top:0;right:0;width:150px;bottom:0;border-left:1px solid #f2f2f0;font-size:14px}#new-test-dialog .dialog-content div.steps dl{color:#53585d;padding:24px 18px 5px 18px;margin:0}#new-test-dialog .dialog-content div.steps dl dt{margin:0;font-weight:normal}
+#new-test-dialog .dialog-content div.steps dl dd{margin:10px 0 40px;color:#999;font-weight:normal}

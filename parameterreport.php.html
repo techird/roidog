@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/roidog.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/roidog.js"></script>	<title>Parameter Report - Roidog</title>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+    <script type="text/javascript" src="js/parameterreport.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker-bs3.css">
+    <link rel="stylesheet" type="text/css" href="css/parameterreport.css">
+</head>
+<body>	
+
+	<div id="feedback-dialog" class="dialog-widget">
+	<div class="dialog-title">
+		<h2>Send Feedback</h2>
+	</div>
+	<div class="dialog-content">
+		<form>
+			<div class="field">
+				<label>Feedback</label>
+				<textarea></textarea>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="field">
+				<label>How would you rate ROIDog's stability and performance?</label>
+				<div class="check-group">
+					<label><input type="checkbox">5-Awesome</label>
+					<label><input type="checkbox">4-Good</label>
+					<label><input type="checkbox">3-Okay</label>
+					<label><input type="checkbox">2-Bad</label>
+					<label><input type="checkbox">1-Horrible</label>
+				</div>
+			</div>
+			<div class="submit">
+				<button class="submit small">Send</button>
+				<a class="close-dialog">Cancel</a>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="head-line"></div>
+<div class="content-container">
+	<div class="header">
+		<div class="logo">
+			<h1>Roido</h1>
+		</div>
+		<div class="nav">
+			<ul>
+				<li class="i1">
+					<a>Campaigns</a>
+				</li>
+				<li class="i2">
+					<a>Split Test</a>
+				</li>
+				<li class="i3">
+					<a>Reports</a>
+				</li>
+				<li class="i4">
+					<a class="drop-down">Meta Data</a>
+					<ul class="drop-down-menu">
+						<li><a>Parameter Report</a></li>	
+						<li><a>Age Report</a></li>
+						<li><a>Show me a menu</a></li>
+					</ul>
+				</li>
+				<li class="i5">
+					<a>System</a>
+				</li>
+			</ul>
+		</div>
+		<div class="action">
+			<ul>
+				<li class="key"></li>
+				<li class="feedback"></li>
+				<li class="spliter"></li>
+				<li class="user">
+					<a class="drop-down"></a>
+					<ul class="drop-down-menu flat">
+						<li><a>Profile</a></li>						
+						<li class="spliter-down"><a>License</a></li>
+						<li><a>Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="clear-fix"></div>    <div class="content-header">
+        <h1>Age report</h1>
+        <hr>
+        <div class="filter">
+            <label for="">Filter:</label>
+            <select name="" id="">
+                <option value="">campaigns</option>
+            </select>
+            <select name="" id="">
+                <option value="">traffic</option>
+            </select>
+            <select name="" id="" class="date-range" placeholder="2013-08-31" style="width: 300px;">
+            </select>
+        </div>
+        <div class="filter">
+            <label for="">Object:</label>
+            <select name="" id="" class="removable">
+                <option value="">Keyword</option>
+            </select>
+            <button class="growth-button">+</button>
+        </div>
+        <div class="filter">
+            <label for="">Mobile Param:</label>
+            <select name="" id="">
+                <option value="">Brand</option>
+            </select>
+            <select name="" id="">
+                <option value="">Carrie</option>
+            </select>
+            <select name="" id="">
+                <option value="">Model</option>
+            </select>
+            <select name="" id="">
+                <option value="">OS</option>
+            </select>
+        </div>
+    </div>
+    <hr> 
+    <div class="submit">
+        <button class="submit small">Apply</button>
+    </div>
+    <table class="data-table stand-alone">
+        <tr>
+            <th>Type</th>
+            <th>Keyword</th>
+            <th>Parameter1</th>
+            <th>Parameter2</th>
+            <th>Clicks</th>
+            <th>Conversions</th>
+            <th>CR</th>
+            <th>Income</th>
+            <th>Net</th>
+            <th>ROI</th>
+        </tr>
+        <tr>
+            <td><span class="type-mobile"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="type-pc"></span></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <div class="paging-widget" page-size-option="20 50 100 200" page-size="50" item-count="482" page-index="2"></div>
+		<div class="clear-fix"></div>
+</div>
+
+<div class="footer">
+	Copyright © Mosogic 2011—2013 All Right Reserved
+</div>
+</body>
+</html>

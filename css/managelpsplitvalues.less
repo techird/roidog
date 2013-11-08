@@ -1,0 +1,37 @@
+div.content-header p {
+    font-size: 14px;
+    margin-top: 10px;
+    span {
+        display: inline-block;
+        padding-right: 50px;
+    }
+}
+
+#lp-value-list td {
+    text-align: center;
+}
+
+#new-value-dialog {
+    div.padding-box {
+        padding-top: 30px;
+    }
+    div.field .longer {
+        width: 320px;
+    }
+    #create-value-btn {
+        padding: 6px 100px;
+        position: relative;
+        &:before {
+            content: 'Fields with * are required';
+            color: #9d9d9d;
+            font-size: 12px;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -20px;
+            text-align: center;
+            text-shadow: none;
+        }
+    }
+}
