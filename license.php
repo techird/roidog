@@ -15,25 +15,26 @@
     <table class="name-value">
         <tr>
             <td>System Version</td>
-            <td>0.4.1</td>
+            <td><input type="text" value="0.4.1" /></td>
         </tr>
         <tr>
             <td>Match Database Version</td>
-            <td>0.4.0</td>
+            <td><input type="text" value="0.4.0" /></td>
         </tr>
         <tr>
             <td>Your Data Base Version</td>
-            <td>0.4.1</td>
+            <td><input type="text" value="0.4.1" /></td>
         </tr>
         <tr>
             <td>Roidog Member Name</td>
-            <td>changlei1</td>
+            <td><input type="text" value="changlei1" /></td>
         </tr>
         <tr>
             <td>Roidog Member Password</td>
-            <td>a1b2c3d4</td>
+            <td><input type="text" value="a1b2c3d4" /></td>
         </tr>
     </table>
+    <button class="submit" style="margin-left: 330px; margin-top: 30px;">Apply</button>
 	<?php include 'content_end.php' ?>
 
 </body>

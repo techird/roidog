@@ -4,8 +4,7 @@ div.campaign-filter button{font-size:14px;font-weight:normal;margin-left:50px}
 #campaign-list th{padding:0 5px}
 #campaign-list td{text-align:center}#campaign-list td:first-child{width:40px}
 #campaign-list td:nth-child(2){width:160px}
-#campaign-list .popup-list li{border-top:1px solid #efefef}#campaign-list .popup-list li:first-child{border-top:none}
-#campaign-list .popup-list li.action-alert,#campaign-list .popup-list li.action-get-url{border-top:2px solid #ccc}
+#campaign-list .popup-list li.action-alert,#campaign-list .popup-list li.action-get-url{border-top:1px solid #efefef}
 #campaing-url-dialog .dialog-title{position:relative}
 #campaing-url-dialog .dialog-content{width:540px;height:360px;padding:0 30px 20px;overflow-y:auto}#campaing-url-dialog .dialog-content h3{font-size:16px;height:45px;line-height:45px}
 #campaing-url-dialog .dialog-content p{font-size:12px;line-height:18px;color:#747577}

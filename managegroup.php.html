@@ -14,9 +14,33 @@
             padding: 10px 100px 10px 0;
         }
     </style>
+    <script>
+    $(function () {
+        $('#new-group-dialog-button').click(function(){
+            $('#new-group-dialog').showDialog();
+        });
+    });
+    </script>
 </head>
 <body>	
 
+    <div id="new-group-dialog" class="dialog-widget">
+        <div class="dialog-title"><h2>Create New Group</h2></div>
+        <div class="dialog-content">
+            <form class="stand-alone longer">
+                <div class="field">
+                    <label>Group Name<span class="required">*</span></label>
+                    <input type="text">
+                </div>
+                <div class="padding-box"></div>
+                <div class="field">
+                    <label></label>
+                    <button id="save-offer-btn" class="submit small">Save</button>
+                    <a class="close-dialog">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
 	<div id="feedback-dialog" class="dialog-widget">
 	<div class="dialog-title">
 		<h2>Send Feedback</h2>
@@ -104,6 +128,7 @@
 	<div class="clear-fix"></div>    <div class="content-header">
         <h1>Manage Group</h1>
         <hr>
+        <button id="new-group-dialog-button" class="form-button"><span class="icon-add">+</span>New Group</button>
     </div>
     <table class="groups">
         <tr>

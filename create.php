@@ -71,6 +71,28 @@
 	        </form>
 	    </div>
 	</div>
+
+
+	<div id="new-group-dialog" class="dialog-widget">
+	    <div class="dialog-title"><h2>Create New Group</h2></div>
+	    <div class="dialog-content">
+	        <form class="stand-alone longer">
+	            <div class="field">
+	                <label>Group Name<span class="required">*</span></label>
+	                <input type="text">
+	            </div>
+	            <div class="padding-box"></div>
+	            <div class="field">
+	                <label></label>
+	                <button id="save-offer-btn" class="submit small">Save</button>
+	                <a class="close-dialog">Cancel</a>
+	            </div>
+	        </form>
+	    </div>
+	</div>
+
+    <?php include 'new_traffic_source_dialog.php' ?>
+
 	<?php include 'content_start.php' ?>
 	
 	<div class="create-form-container">
@@ -82,7 +104,7 @@
 			</div>
 			<div class="field">
 				<label for="active">Active</label>
-				<input type="checkbox" class="switch" />
+				<input type="checkbox" class="switch" checked />
 			</div>
 			<div class="field">
 				<label for="mobile">Mobile</label>
@@ -94,7 +116,7 @@
 					<option value="">Group1</option>
 					<option value="">Group2</option>
 				</select>
-				<a href="">New Group</a>
+				<a class="new-group-dialog-link">New Group</a>
 			</div>
 			<div class="field">
 				<label for="timezone">Time Zone</label>
@@ -200,11 +222,11 @@
 						<input type="text" />
 					</div>
 					<div class="field">
-						<label>Traffic Souce</label>
+						<label>Traffic Source</label>
 						<select placeholder="select a group" style="width: 150px;">
 							<option value="group">Group1</option>
 						</select>
-						<a>New Group</a>
+						<a class="new-traffic-source-dialog-link">New Traffic Source</a>
 					</div>
 					<div class="field">
 						<label>CPC($)</label>

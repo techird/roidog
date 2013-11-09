@@ -1,34 +1,27 @@
 $(function () {
-    $('#block-ip-list').action('a.action', 
-    {
-        'edit' : {
+    $('#block-ip-list').action('a.action', {
+        'edit': {
             text: 'Edit',
-            action: function(e) {
+            action: function (e) {
                 alert('请重写该方法');
-            } 
-        },
-        'delete' : {
-            text: 'Delete',
-            action: function(e) {
-                e.removeRow();
             }
         },
-        'manage-group' : {
-            text: 'Manage Group',
-            action: function(e) {
-                
+        'delete': {
+            text: 'Delete',
+            action: function (e) {
+                e.removeRow();
             }
         }
     });
 
-    $('#add-block-ip-btn').on('click', function() {
+    $('#add-block-ip-btn').on('click', function () {
         $('.new-block-ip-dialog').showDialog();
     });
 
-    $('#block-ip-type').on('changed', function(e) {
+    $('#block-ip-type').on('changed', function (e) {
         var val = $(e.target).val();
         var form = $(e.target).closest('form');
-        if(val == 'single') {
+        if (val == 'single') {
             form.children('.single-ip-field').slideDown();
             form.children('.region-ip-field').slideUp();
         } else {

@@ -267,7 +267,7 @@
 						<td>AVG. CR: 8%</td>
 						<td>AVG. EPC: $0.6</td>
 						<td>AVG. CPA: $2.3</td>
-						<td>Version: 1.2.1<a class="update-tip">update to 1.2.3</a></td>
+						<td><div class="wrapper">Version: 1.2.1<a class="update-tip">update to 1.2.3</a></div></td>
 					</tr>
 				</table>
 			</div>

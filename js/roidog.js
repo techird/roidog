@@ -219,6 +219,25 @@ $(function () {
             .find(".select-option-list").fadeOut('fast');
     });
 
+    /* Switch Widget */
+    function switchWdiget() {
+        var check = $(this);
+        var div = $('<div>').addClass('switch');
+        if (check.prop('checked')) {
+            div.attr('checked', 'checked');
+        }
+        check.after(div);
+        div.click(function () {
+            check.click();
+        });
+    }
+    $.extend($.fn, {
+        switchwidget: function () {
+            this.each(switchWdiget);
+        }
+    });
+    $('input[type=checkbox].switch').switchwidget();
+
     /* Group Button */
     $('label.check-widget').on('click', function (e) {
         var $target = $(e.target);
@@ -386,6 +405,9 @@ $(function () {
     /* Action Menu Support */
 
     function removeRow() {
+        if (!confirm('Are you sure to remove this row?')) {
+            return;
+        }
         var tr = $(this.target).closest('tr');
         tr.children().animate({
             'background-color': '#A00',
