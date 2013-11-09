@@ -34,7 +34,4 @@ $(function () {
 	$('#note-dialog-link').click(function () {
 		$('#note-dialog').showDialog();
 	});
-	setTimeout(function () {
-		$('#note-dialog-link').click();
-	})
 });
