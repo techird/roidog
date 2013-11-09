@@ -18,9 +18,11 @@
 			<li><a href="#campaign-uri">Compaign URI</a></li>
 			<li><a href="#conversion-time">Advanced</a></li>
 			<li class="last-link"><a href="#geo">Link</a></li>
-			<li><a>Notes</a></li>
+			<li><a id="note-dialog-link">Notes</a></li>
 		</ul>
 	</div>
+
+	<?php include 'note_dialog.php' ?>
 
 	<?php include 'content_start.php' ?>
 

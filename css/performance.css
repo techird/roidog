@@ -16,3 +16,10 @@ div.landing-page tr.landing-page-detail.hidden{display:none}
 div.compaign-url{width:100%;margin-top:10px}
 div.conversion-time,div.geo{width:100%;margin-top:10px;border:1px solid #eeede8;border-top:none;background-color:#fff;overflow:hidden}div.conversion-time div.chart,div.geo div.chart{width:325px;height:320px;padding:10px 0;float:left;margin-right:-1px;border-right:1px solid #f6f5f1;padding-left:1px}div.conversion-time div.chart:last-child,div.geo div.chart:last-child{border:none}
 div.conversion-time div.chart h3,div.geo div.chart h3{height:22px;line-height:22px;text-align:center;margin:10px 0;font-size:14px;font-weight:normal}
+#note-dialog .dialog-title{position:relative}
+#note-dialog .dialog-content{width:760px;height:500px;padding:0 30px 50px;overflow-y:auto}#note-dialog .dialog-content label{display:block;margin-top:15px;margin-bottom:5px}
+#note-dialog .dialog-content textarea{width:640px;height:80px;resize:none;vertical-align:middle}
+#note-dialog .dialog-content button.submit{padding:6px 10px;vertical-align:middle}
+#note-dialog .dialog-content ul{margin-top:35px}#note-dialog .dialog-content ul li{padding:5px;border-bottom:2px solid #efefef;font-size:12px}#note-dialog .dialog-content ul li:last-child{border-bottom:none}
+#note-dialog .dialog-content ul li h3{font-weight:normal;margin:10px 0;position:relative}#note-dialog .dialog-content ul li h3 a.close{display:none}
+#note-dialog .dialog-content ul li:hover h3 a.close{display:block}

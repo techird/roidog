@@ -122,7 +122,7 @@ div.conversion-time, div.geo {
 		margin-right: -1px;
 		border-right: 1px solid #f6f5f1;
 		padding-left: 1px;
-		&:{
+		&:last-child {
 			border: none;
 		}
 		h3 {
@@ -132,6 +132,55 @@ div.conversion-time, div.geo {
 			margin: 10px 0;
 			font-size: 14px;
 			font-weight: normal;
+		}
+	}
+}
+
+#note-dialog {
+	.dialog-title {
+		position: relative;
+	}
+	.dialog-content {
+		width: 760px;
+		height: 500px;
+		padding: 0 30px 50px;
+		overflow-y: auto;
+		label {
+			display: block;
+			margin-top: 15px;
+			margin-bottom: 5px;
+		}
+		textarea {
+			width: 640px;
+			height: 80px;
+			resize: none;
+			vertical-align: middle;
+		}
+		button.submit {
+			padding: 6px 10px;
+			vertical-align: middle;
+		}
+		ul {
+			margin-top: 35px;
+			li {
+				padding: 5px;
+				border-bottom: 2px solid #efefef;
+				&:last-child {
+					border-bottom: none;
+				}
+				font-size: 12px;
+				h3 {
+					font-weight: normal;
+					margin: 10px 0;
+					position: relative;
+					a.close {
+						display: none;
+					}
+				}
+				&:hover h3 a.close {
+					display: block;
+				}
+			}
 		}
 	}
 }
