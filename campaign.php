@@ -23,6 +23,65 @@
             <button class="form-button" type="button">Copy</button>
         </div>
     </div>
+    <?php include 'new_group_dialog.php' ?>
+
+    <div id="alert-dialog" class="dialog-widget">
+        <div class="dialog-title">
+            <h2 style="position: relative;">Alert Settings <a class="close-dialog close round"></a></h2>
+        </div>
+        <div class="dialog-content">            
+            <form class="alerts">
+                <div class="field">
+                    <input type="checkbox" class="switch" checked>
+                    <span>Campaign's ROL less than</span>
+                    <input type="text" class="short" value="10.0">
+                    <span>%</span>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch">
+                    <span>Campaign's CR (Conversion Rate) less than</span>
+                    <input type="text" class="short" value="0.10">
+                    <span>%</span>
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch" checked>
+                    <span>Campaign's click more than</span>
+                    <input type="text" class="short" value="100">
+                    <span>. But its conversion less than</span>
+                    <input type="text" class="short" value="2">
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch">
+                    <span>Campaign's click less than</span>
+                    <input type="text" class="short" value="100">
+                    <span>. But its cost more than</span>
+                    <input type="text" class="short" value="100.0">
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch">
+                    <span>Landing page is shown more than </span>
+                    <input type="text" class="short" value="100">
+                    <span>times and its CTR less than</span>
+                    <input type="text" class="short" value="0.1">
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch" checked>
+                    <span>Landing page is shown more than </span>
+                    <input type="text" class="short" value="100">
+                    <span>times and its CTR less than</span>
+                    <input type="text" class="short" value="0.1">
+                </div>
+                <div class="field">
+                    <input type="checkbox" class="switch">
+                    <span>Landing page's click more than</span>
+                    <input type="text" class="short" value="100">
+                    <span>and its conversion less than </span>
+                    <input type="text" class="short" value="2">
+                </div>
+            </form>
+        </div>
+    </div>
+
 	<?php include 'content_start.php' ?>
     <div class="content-header campaign-filter">
         <h1>Campaign</h1>
@@ -53,7 +112,7 @@
             <th>Status</th>
             <th>Last Click</th>
             <th>Click</th>
-            <th>Conversions</th>
+            <th>CVS</th>
             <th>CR</th>
             <th>Cost</th>
             <th>Income</th>

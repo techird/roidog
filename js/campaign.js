@@ -1,37 +1,42 @@
-$(function() {
+$(function () {
     $('#campaign-list').action('a.action', {
-        'edit' : {
+        'edit': {
             text: 'Edit',
-            action: function() {}
+            action: function () {}
         },
-        'performance' : {
+        'performance': {
             text: 'Performance',
-            action: function() {}
+            action: function () {}
         },
-        'clone' : {
+        'clone': {
             text: 'Clone',
-            action: function() {}
+            action: function () {}
         },
-        'delete' : {
+        'delete': {
             text: 'Delete',
-            action: function(e) {
+            action: function (e) {
                 e.removeRow();
             }
         },
-        'alert' : {
+        'alert': {
             text: 'Alert',
-            action: function(e) {}
+            action: function (e) {
+                $('#alert-dialog').showDialog();
+            }
         },
-        'note' : {
+        'note': {
             text: 'Notes',
-            action: function() {}
+            action: function () {}
         },
-        'manage-group' : {
-            text: 'Manage Group'
+        'manage-group': {
+            text: 'Manage Group',
+            action: function () {
+                $('#new-group-dialog').showDialog();
+            }
         },
-        'get-url' : {
+        'get-url': {
             text: 'Get URL',
-            action: function() {
+            action: function () {
                 $('#campaing-url-dialog').showDialog();
             }
         }

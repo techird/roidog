@@ -30,7 +30,7 @@
         </div>
         <div class="field">
             <label for=""></label>
-            <button class="form-button">Update</button>
+            <button class="submit" style="margin-top: 20px;">Update</button>
         </div>
     </form>
 	<?php include 'content_end.php' ?>

@@ -21,24 +21,7 @@
     </script>
 </head>
 <body>	
-
-    <div id="new-group-dialog" class="dialog-widget">
-        <div class="dialog-title"><h2>Create New Group</h2></div>
-        <div class="dialog-content">
-            <form class="stand-alone longer">
-                <div class="field">
-                    <label>Group Name<span class="required">*</span></label>
-                    <input type="text">
-                </div>
-                <div class="padding-box"></div>
-                <div class="field">
-                    <label></label>
-                    <button id="save-offer-btn" class="submit small">Save</button>
-                    <a class="close-dialog">Cancel</a>
-                </div>
-            </form>
-        </div>
-    </div>
+    <?php include "new_group_dialog.php" ?>
 	<?php include 'content_start.php' ?>
     <div class="content-header">
         <h1>Manage Group</h1>
