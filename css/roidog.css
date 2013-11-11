@@ -116,9 +116,9 @@ form .field li.sub-item input.short{width:40px}
 form .field li.sub-item>span{padding:0 5px}
 form .field li.sub-item select{width:140px}form .field li.sub-item select.short{width:14px;margin-right:15px}
 form .padding-box{padding:20px 0 0}
-button.form-button{font-family:Arial;padding:5px 20px;height:14px;line-height:14px;box-sizing:content-box;border:1px solid #718486;border-radius:4px;background:url(../image/form-button.png) repeat-x;outline:none;color:#fff;text-shadow:0 -1px #429ba3;cursor:pointer;margin-top:10px}button.form-button:hover{background-position:0 -24px}
+button.form-button{font-family:Arial;padding:5px 20px;height:14px;line-height:13px;box-sizing:content-box;border:1px solid #718486;border-radius:4px;background:url(../image/form-button.png) repeat-x;outline:none;color:#fff;text-shadow:0 -1px #429ba3;cursor:pointer;margin-top:10px}button.form-button:hover{background-position:0 -24px}
 button.form-button:active{background-position:0 -48px}
-button.submit{font-family:Arial;font-size:18px;padding:6px 40px;height:18px;line-height:18px;font-size:14px;font-weight:normal;background-position:0 -138px;background:url(../image/submit.png) repeat-x;border:1px solid #20a086;border-radius:5px;color:#fff;text-shadow:0 -1px #43a976;outline:none;cursor:pointer;margin:0}button.submit:hover{background-position:0 -168px}
+button.submit{font-family:Arial;font-size:18px;padding:6px 40px;height:18px;line-height:17px;font-size:14px;font-weight:normal;background-position:0 -138px;background:url(../image/submit.png) repeat-x;border:1px solid #20a086;border-radius:5px;color:#fff;text-shadow:0 -1px #43a976;outline:none;cursor:pointer;margin:0}button.submit:hover{background-position:0 -168px}
 button.submit:active{background-position:0 -198px}
 input[disabled]{background-color:#eee;border:1px solid #c1c1c1;border-radius:3px;height:18px;padding:2px 3px}
 button.normal-btn{height:24px;line-height:24px;outline:none;border:1px solid #cfcfcf;border-radius:4px;padding:0 8px;text-shadow:0 1px #fff;background:url(../image/button.png) repeat-x;vertical-align:middle}button.normal-btn:hover{background-position:0 -24px}
