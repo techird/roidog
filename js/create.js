@@ -90,6 +90,22 @@ $(function () {
 			$(e.target).before($.def('.new-output'));
 		});
 
+
+	var clip = new ZeroClipboard($("button.copy-button"), {
+		hoverClass: 'hover',
+		activeClass: 'active'
+	});
+	clip.on( 'dataRequested', function (client, args) {
+		var url = $(this).prev()[0].select(-1);
+		$(this).tooltip('Copy Successed!', {
+			top: -20,
+			left: -100
+		});
+	});
+	$("button.copy-button").click(function(){
+		alert('click');
+	});
+
 	$('.panel.campaign-url')
 		.delegate('.param-container button', 'click', function (e) {
 			var li = $.def(".campaign-param").css("display", "none");

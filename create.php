@@ -3,6 +3,10 @@
 <head>
 	<?php include 'common_head.php' ?>
 	<title>New Campiagn - Roidog</title>
+	<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+	<script type="text/javascript">
+		ZeroClipboard.setDefaults( { moviePath: 'js/ZeroClipboard.swf' } );
+	</script>
 	<script type="text/javascript" src="js/create.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/create.css">
 </head>
@@ -421,14 +425,14 @@
 				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
 				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.</p>
 				<div class="copy-url">
-					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
-					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>
+					<input id="copy-target-1" type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
+					<button class="normal-btn copy-button" data-clipboard-target="copy-target-1">Copy Url</button>
 				</div>
 				<h3>Landing Page: cn.affoffice.com-> Option: buybutton-top</h3>
 				<p>this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.this is tips.</p>
 				<div class="copy-url">
-					<input type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
-					<button tooltip-text="Use [Ctrl + C] to finish copy after clicked me" tooltip-offset="left: -40; top: -20;">Copy Url</button>
+					<input id="copy-target-2" type="text" class="copy-url" disabled="disabled" value="http://chtrack.com/roidogforuidesign/bell/ad.php?tl=37&amp;creative={creative}&amp;adtype=adtype&amp;bannernum=1" />
+					<button class="normal-btn copy-button" data-clipboard-target="copy-target-1">Copy Url</button>
 				</div>
 			</div>
 		</div>

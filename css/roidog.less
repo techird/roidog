@@ -423,6 +423,11 @@ div.tab-container {
 				clear: both;
 			}
 		}
+		&.growth {
+			height: auto;
+			min-height:  50px;
+			overflow: hidden;
+		}
 	}
 	div.tab-body {
 		display: none;
@@ -472,7 +477,9 @@ ul.popup-list {
 	position: absolute;
 	background-color: #ffffff;
 	border-radius: 4px;
-	overflow: hidden;
+	overflow: auto;
+	overflow-x: hidden;
+	max-height: 200px;
 	box-shadow: 0 0 3px rgba(154, 158, 154, .8);
 	z-index: 100;
 	li {
@@ -1114,10 +1121,10 @@ button.normal-btn {
 	text-shadow: 0 1px white;
 	background: url(../image/button.png) repeat-x;
 	vertical-align: middle;
-	&:hover {
+	&:hover, &.hover {
 		background-position: 0 -24px;
 	}
-	&:active {
+	&:active, &.active {
 		background-position: 0 -48px;
 	}
 }

@@ -84,6 +84,47 @@ $(function () {
         });
     });
 
+    $.extend($.fn, {
+        tooltip: function( text, opt ) {
+            var opt = $.extend({
+                timeout: 1500
+            }, opt);
+            this.each(function(index, element) {
+                var $target = $(element);
+
+                var $div = $("<div>" + text + "<div class=\"knock\"></div></div>")
+                    .addClass("tooltip").appendTo("body");
+
+                var pos = $target.offset();
+                pos.top -= $div.height();
+                pos.left += $target.outerWidth();
+                if (opt.left) {
+                    pos.left += +opt.left;
+                }
+                if (opt.top) {
+                    pos.top += +opt.top;
+                }
+                if (opt.right) {
+                    pos.left += +opt.right;
+                }
+                if (opt.bottom) {
+                    pos.top += +opt.bottom;
+                }
+                $div.css({
+                    left: pos.left,
+                    top: pos.top
+                });
+                if(opt.timeout > 0) {
+                    setTimeout(function() {
+                        $div.fadeOut(300, function() {
+                            $div.remove();
+                        });
+                    }, opt.timeout);
+                }
+            });
+        }
+    });
+
     /* Tooltip */
     $("*[tooltip-text]").on("mouseover", function (e) {
         var $target = $(e.target);

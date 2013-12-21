@@ -13,6 +13,7 @@ $(function () {
 			endDate: moment()
 		},
 		function (start, end) {
+			$('div.date-range').prev('select').children().val(start.format('YYYYMMDD') + ',' + end.format('YYYYMMDD'))
 			$('div.date-range label').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
 		}
 	);
